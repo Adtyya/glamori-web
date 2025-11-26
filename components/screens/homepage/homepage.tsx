@@ -1,4 +1,5 @@
 import Banner from "./section/banner";
+import Testimonial from "./section/testimonial";
 import Treatment from "./section/treatment";
 
 export default function HomePageScreen() {
@@ -6,6 +7,7 @@ export default function HomePageScreen() {
     <>
       <Banner />
       <Treatment />
+      <Testimonial />
     </>
   );
 }

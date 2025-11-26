@@ -9,7 +9,7 @@ import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
-export default function Treatment() {
+export default function Testimonial() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   return (
@@ -18,10 +18,10 @@ export default function Treatment() {
         <div className="flex items-center justify-center">
           <div className="text-center">
             <Paragraph size="xl" className="font-semibold !text-glamorig-500">
-              Treatments
+              Testimonials
             </Paragraph>
             <Heading as={3} className="capitalize">
-              what we can do for you
+              what our customer say?
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
@@ -118,33 +118,13 @@ export default function Treatment() {
 
 function Card() {
   return (
-    <div className="w-full border-2 border-glamorig-500 rounded-2xl overflow-hidden hover:-translate-y-3.5 hover:drop-shadow-md duration-300">
-      <div className="px-1.5 py-5 border-b-2 border-glamorig-500 text-center">
-        <Paragraph size="lg" className="font-semibold !text-glamorig-500">
-          Facial Treatment
-        </Paragraph>
-      </div>
-      <div className="w-full h-96 relative">
-        <Image
-          src="https://placehold.co/600x600.png"
-          alt="test"
-          fill
-          className="object-cover"
-        />
-      </div>
-      <div className="p-2.5">
-        <Paragraph className="font-medium">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sequi
-          pariatur non velit hic quod iusto voluptatem, ducimus optio itaque
-          impedit earum ratione deleniti quas est sint provident distinctio
-          consectetur accusantium enim voluptatibus expedita. Minus debitis
-          deleniti maxime omnis vero cupiditate fugiat eveniet nam, sit sunt
-          dolorem autem eum accusantium.
-        </Paragraph>
-      </div>
-      <div className="px-2.5 pb-5 flex items-center justify-center">
-        <Button>Lihat Selengkapnya</Button>
-      </div>
+    <div className="w-full h-96 relative">
+      <Image
+        src="https://placehold.co/600x600.png"
+        alt="test"
+        fill
+        className="object-cover"
+      />
     </div>
   );
 }

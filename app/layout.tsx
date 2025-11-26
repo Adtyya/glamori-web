@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "swiper/css";
 import { Footer, NavigationBar } from "@/components/layout";
 
 export const metadata: Metadata = {
