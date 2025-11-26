@@ -5,6 +5,7 @@ import { glamori_logo_navbar } from "@/constant/image";
 import { Paragraph } from "../text";
 import { menu_list_footer } from "@/constant/navigation";
 import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -86,29 +87,38 @@ export default function Footer() {
           </Paragraph>
 
           {/* Contact & Socials */}
-          <div className="flex flex-col items-center lg:items-end">
+          <div className="flex flex-col items-center lg:items-start">
             <Paragraph className="font-semibold">Hubungi Kami</Paragraph>
-            <div className="flex gap-4 mt-2">
+            <div className="flex gap-4 items-center mt-2">
               <a
                 href={process.env.NEXT_PUBLIC_WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaWhatsapp size={22} className="hover:scale-110 transition" />
+                <FaWhatsapp size={22} />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_INSTAGRAM}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram size={22} className="hover:scale-110 transition" />
+                <FaInstagram size={22} />
               </a>
               <a
                 href={process.env.NEXT_PUBLIC_TIKTOK}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTiktok size={22} className="hover:scale-110 transition" />
+                <FaTiktok size={22} />
+              </a>
+              <a
+                href={process.env.NEXT_PUBLIC_PLAYSTORE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2.5 items-center border-2 px-3.5 py-1.5 border-black rounded-full"
+              >
+                <IoLogoGooglePlaystore size={22} />
+                <Paragraph className="font-semibold">Unduh Aplikasi</Paragraph>
               </a>
             </div>
           </div>
