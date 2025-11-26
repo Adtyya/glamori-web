@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
 
 export default function Treatment() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);

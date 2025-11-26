@@ -1,5 +1,4 @@
 "use client";
-import Button from "@/components/button";
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
@@ -7,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-import "swiper/css";
 
 export default function Testimonial() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
