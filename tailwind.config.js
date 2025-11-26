@@ -26,9 +26,6 @@ module.exports = {
           200: "#EBEEF2",
           100: "#F4F6F9",
         },
-        glamorib: {
-          100: "#09101D",
-        },
       },
     },
   },
