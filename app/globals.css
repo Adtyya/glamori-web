@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+@import "./satoshi.css";
+
+:root {
+  --font-satoshi: "Satoshi-Variable", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-satoshi);
+}
