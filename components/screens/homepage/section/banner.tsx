@@ -19,32 +19,24 @@ export default function Banner() {
       {/* Overlay konten */}
       <div className="absolute inset-0">
         <Container>
-          <div className="grid grid-cols-1 gap-6 w-full h-full items-center">
-            <div className="text-center lg:text-left px-4 lg:px-0">
+          <div className="grid items-center w-full h-full grid-cols-1 gap-6">
+            <div className="px-4 text-center lg:text-left lg:px-0">
               <Heading as={1} className="capitalize text-glamorig-500">
                 mari rawat kulit cantikmu
               </Heading>
-              <Heading as={3} className="font-thin mt-2">
+              <Heading as={3} className="mt-2 font-thin">
                 Jadwalkan treatmentmu sekarang juga
               </Heading>
 
-              <Button size="lg" className="font-semibold mt-10 mx-auto lg:mx-0">
+              <Button size="lg" className="mx-auto mt-10 font-semibold lg:mx-0">
                 Book Now
               </Button>
             </div>
 
             {/* Kolom kanan dibiarkan kosong untuk komposisi gambar (desktop) */}
-            <div className="hidden lg:flex items-end justify-end" />
+            <div className="items-end justify-end hidden lg:flex" />
           </div>
         </Container>
-      </div>
-
-      {/* Tombol Chat WhatsApp */}
-      <div className="absolute right-4 bottom-4 lg:right-10 lg:bottom-10 hidden lg:block">
-        <Button className="font-semibold !py-5 lg:!py-2">
-          <FaWhatsapp className="w-7 h-7" />
-          <span className="hidden lg:block">Chat WhatsApp</span>
-        </Button>
       </div>
     </div>
   );
