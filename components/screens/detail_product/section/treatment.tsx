@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
-import Link from "next/link";
 
 export default function Treatment() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
@@ -17,11 +16,8 @@ export default function Treatment() {
       <div className="py-12">
         <div className="flex items-center justify-center">
           <div className="text-center">
-            <Paragraph size="xl" className="font-semibold !text-glamorig-500">
+            <Heading as={2} className="font-semibold !text-glamorig-500">
               Treatments
-            </Paragraph>
-            <Heading as={3} className="capitalize">
-              what we can do for you
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
@@ -143,9 +139,7 @@ function Card() {
         </Paragraph>
       </div>
       <div className="px-2.5 pb-5 flex items-center justify-center">
-        <Link href="/product/facial-treatment">
-          <Button>Lihat Selengkapnya</Button>
-        </Link>
+        <Button>Lihat Selengkapnya</Button>
       </div>
     </div>
   );
