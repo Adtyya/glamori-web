@@ -21,7 +21,7 @@ export default function LatestBlog() {
           </div>
         </div>
         <div className="mt-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card />
             <Card />
             <Card />
@@ -34,7 +34,7 @@ export default function LatestBlog() {
 
 function Card() {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+    <div className="overflow-hidden transition-all duration-300 bg-white shadow-lg cursor-pointer rounded-2xl hover:shadow-2xl hover:-translate-y-1 group">
       <div className="relative w-full h-64">
         <Image
           src="https://placehold.co/600x600.png"
@@ -44,22 +44,22 @@ function Card() {
         />
       </div>
 
-      <div className="p-5 flex flex-col gap-3">
+      <div className="flex flex-col gap-3 p-5">
         <Heading
           as={3}
-          className="font-semibold leading-snug hover:text-glamorig-500 transition-colors"
+          className="font-semibold leading-snug transition-colors group-hover:text-glamorig-500"
         >
           Lorem, ipsum.
         </Heading>
 
-        <Paragraph className="text-gray-600 leading-relaxed line-clamp-3">
+        <Paragraph className="leading-relaxed text-gray-600 line-clamp-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a
           odit assumenda laboriosam in similique.
         </Paragraph>
 
         <div className="flex items-center gap-2 pt-1">
           <span className="text-sm text-gray-500">10 Nov 2025</span>
-          <span className="w-1 h-1 rounded-full bg-gray-300"></span>
+          <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
           <span className="text-sm text-gray-500">Skincare</span>
         </div>
       </div>

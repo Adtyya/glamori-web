@@ -1,5 +1,7 @@
 import Banner from "./section/banner";
+import FollowInstagram from "./section/followinstagram";
 import LatestBlog from "./section/latestblog";
+import Subscribe from "./section/subscribe";
 import Testimonial from "./section/testimonial";
 import Treatment from "./section/treatment";
 
@@ -10,6 +12,8 @@ export default function HomePageScreen() {
       <Treatment />
       <Testimonial />
       <LatestBlog />
+      <FollowInstagram />
+      <Subscribe />
     </>
   );
 }
