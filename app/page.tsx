@@ -74,34 +74,6 @@ export const metadata: Metadata = {
     site: "@GlamoriApp",
     creator: "@GlamoriApp",
   },
-
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-
-  // verification: {
-  //   google: "YOUR_GOOGLE_VERIFICATION_CODE",
-  //   bing: "YOUR_BING_VERIFICATION_CODE",
-  //   yandex: "YOUR_YANDEX_VERIFICATION_CODE",
-  // },
-
-  generator: "Next.js",
-  referrer: "origin",
-  applicationName: "Glamori App",
 };
 
 export default function Home() {
