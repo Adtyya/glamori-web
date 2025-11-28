@@ -73,7 +73,7 @@ function Card({ spoiler = false, imageSize = "normal" }: CardProps) {
 
         <div className="flex flex-col gap-3 p-5">
           <Heading
-            as={5}
+            as={4}
             className="font-semibold leading-snug transition-colors group-hover:text-glamorig-500 line-clamp-1"
           >
             Lorem, ipsum.

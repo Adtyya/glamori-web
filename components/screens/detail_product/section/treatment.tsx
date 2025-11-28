@@ -16,8 +16,11 @@ export default function Treatment() {
       <div className="py-12">
         <div className="flex items-center justify-center">
           <div className="text-center">
-            <Heading as={2} className="font-semibold !text-glamorig-500">
+            <Paragraph size="xl" className="font-semibold !text-glamorig-500">
               Treatments
+            </Paragraph>
+            <Heading as={3} className="capitalize">
+              what we can do for you
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
@@ -27,7 +30,7 @@ export default function Treatment() {
         <div className="relative mt-5">
           <button
             onClick={() => swiperInstance?.slidePrev()}
-            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -left-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute left-0 z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer 2xl:-left-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Previous slide"
             disabled={!swiperInstance}
           >
@@ -49,7 +52,7 @@ export default function Treatment() {
 
           <button
             onClick={() => swiperInstance?.slideNext()}
-            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -right-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="absolute right-0 z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer 2xl:-right-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Next slide"
             disabled={!swiperInstance}
           >

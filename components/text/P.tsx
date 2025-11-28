@@ -10,10 +10,10 @@ interface ParagraphProps {
 }
 
 const sizeStyles: Record<Size, string> = {
-  sm: "text-[14px] leading-relaxed",
-  md: "text-[16px] leading-relaxed",
-  lg: "text-[18px] leading-relaxed",
-  xl: "text-[22px] leading-relaxed",
+  sm: "text-[10px] 2xl:text-[14px] leading-relaxed",
+  md: "text-[14px] 2xl:text-[16px] leading-relaxed",
+  lg: "text-[16px] 2xl:text-[18px] leading-relaxed",
+  xl: "text-[18px] 2xl:text-[22px] leading-relaxed",
 };
 
 const Paragraph: FC<ParagraphProps> = ({

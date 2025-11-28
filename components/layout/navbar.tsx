@@ -16,12 +16,8 @@ const path_list = [
     path: "/tentang-glamori",
   },
   {
-    name: "Lokasi Kami",
-    path: "/lokasi-glamori",
-  },
-  {
     name: "Hubungi Kami",
-    path: "/#",
+    path: "/hubungi-kami",
   },
   {
     name: "Blog",
