@@ -1,9 +1,15 @@
+import { RootResponseByIdProps } from "@/types/response";
 import ReadBlog from "./section/read";
+import { ArticleProps } from "@/types/article";
 
-export default function Read() {
+type ReadBlogProps = {
+  articleDetails: RootResponseByIdProps<ArticleProps>;
+};
+
+export default function Read({ articleDetails }: ReadBlogProps) {
   return (
     <>
-      <ReadBlog />
+      <ReadBlog {...{ articleDetails }} />
     </>
   );
 }

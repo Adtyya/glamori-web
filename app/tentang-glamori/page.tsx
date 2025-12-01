@@ -21,24 +21,38 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Glamori Aesthetic Clinic",
-      url: "https://glamori.app",
+      url: new URL(
+        `${process.env.NEXT_PUBLIC_APP_URL}/tentang-glamori` ||
+          "https://glamori.app/tentang-glamori"
+      ),
     },
   ],
   creator: "Glamori App",
   publisher: "Glamori Aesthetic Clinic",
   category: "Beauty & Aesthetic",
-  metadataBase: new URL("https://glamori.app"),
+  metadataBase: new URL(
+    `${process.env.NEXT_PUBLIC_APP_URL}` || "https://glamori.app"
+  ),
 
   alternates: {
-    canonical: "https://glamori.app/about-us",
+    canonical: new URL(
+      `${process.env.NEXT_PUBLIC_APP_URL}/tentang-glamori` ||
+        "https://glamori.app/tentang-glamori"
+    ),
     languages: {
-      "id-ID": "https://glamori.app/about-us",
+      "id-ID": new URL(
+        `${process.env.NEXT_PUBLIC_APP_URL}/tentang-glamori` ||
+          "https://glamori.app/tentang-glamori"
+      ),
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app/about-us",
+    url: new URL(
+      `${process.env.NEXT_PUBLIC_APP_URL}/tentang-glamori` ||
+        "https://glamori.app/tentang-glamori"
+    ),
     title: "Tentang Kami — Glamori App",
     description:
       "Kenali lebih dekat Glamori Aesthetic Clinic: tim profesional, inovasi teknologi kecantikan, dan komitmen memberikan pengalaman perawatan berkualitas premium.",

@@ -5,8 +5,14 @@ import { Heading, Paragraph } from "@/components/text";
 import { Card, FeaturedCard } from "../component/blog_card";
 import type { BlogProps } from "../blog";
 import EmptyBlog from "../component/empty";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function FeaturedBlog({ articleList }: BlogProps) {
+  const router = useRouter();
+
+  const [search, setSearch] = useState<string>("");
+
   const latestArticle = articleList.data.docs[0];
   const secondAndThirdArticle = articleList.data.docs.slice(1, 3);
 
@@ -29,7 +35,15 @@ export default function FeaturedBlog({ articleList }: BlogProps) {
             </div>
           </div>
           <div className="w-96">
-            <SearchBar />
+            <SearchBar
+              onChange={(value: string) => setSearch(value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  if (!search) return;
+                  router.push(`/blog/search?query=${search}`);
+                }
+              }}
+            />
           </div>
         </div>
         <div className="mt-5">

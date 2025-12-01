@@ -1,8 +1,7 @@
 import { Container } from "@/components/layout";
-import { Heading, Paragraph } from "@/components/text";
+import { Heading } from "@/components/text";
 import { Card } from "../component/blog_card";
 import { BlogProps } from "../blog";
-import { FaRegSadTear } from "react-icons/fa";
 import EmptyBlog from "../component/empty";
 
 export default function OtherPost({ articleList }: BlogProps) {

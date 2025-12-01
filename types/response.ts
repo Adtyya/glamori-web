@@ -4,6 +4,12 @@ export type RootResponseProps<T> = {
   data: ResponseDetailProps<T>;
 };
 
+export type RootResponseByIdProps<T> = {
+  status: number;
+  message: string;
+  data: T;
+};
+
 export type ResponseDetailProps<T> = {
   docs: T[];
   totalDocs: number;

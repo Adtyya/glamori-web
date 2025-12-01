@@ -31,24 +31,30 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Glamori Aesthetic Clinic",
-      url: "https://glamori.app",
+      url: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://glamori.app"),
     },
   ],
   creator: "Glamori App",
   publisher: "Glamori Aesthetic Clinic",
   category: "Beauty & Aesthetic",
-  metadataBase: new URL("https://glamori.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://glamori.app"
+  ),
 
   alternates: {
-    canonical: "https://glamori.app",
+    canonical: new URL(
+      process.env.NEXT_PUBLIC_APP_URL || "https://glamori.app"
+    ),
     languages: {
-      "id-ID": "https://glamori.app",
+      "id-ID": new URL(
+        process.env.NEXT_PUBLIC_APP_URL || "https://glamori.app"
+      ),
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app",
+    url: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://glamori.app"),
     title: "Glamori App — Klinik Kecantikan & Aesthetic Treatment Terlengkap",
     description:
       "Booking treatment kecantikan kini lebih mudah. Pilihan lengkap dari Face Treatment, Eyes Treatment, Lips Treatment, Body Treatment, Slimming, Whitening, Filler, sampai Miss V Treatment.",

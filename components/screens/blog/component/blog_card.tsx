@@ -16,6 +16,7 @@ function FeaturedCard(props: ArticleProps) {
             alt={props.title}
             fill
             className="object-cover"
+            quality={100}
           />
         </div>
 
@@ -33,7 +34,7 @@ function FeaturedCard(props: ArticleProps) {
 
           <div className="flex items-center gap-2 pt-1">
             <span className="text-sm text-gray-500">
-              {formatDate(props.updatedAt)}
+              {formatDate(props.updatedAt ?? props.date)}
             </span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <span className="text-sm text-gray-500">

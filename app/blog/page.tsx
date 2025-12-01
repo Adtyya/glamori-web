@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 
 async function fetchAllArticle(): Promise<RootResponseProps<ArticleProps>> {
   try {
-    const res = await api.get("/article");
+    const res = await api.get("/article?perPage=25&page=1");
     return res.data;
   } catch (error) {
     console.error("Error fetching blog data !");

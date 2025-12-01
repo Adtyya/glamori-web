@@ -3,24 +3,38 @@
 import { InputHTMLAttributes } from "react";
 import clsx from "clsx";
 
-type SearchInputProps = InputHTMLAttributes<HTMLInputElement> & {
+type SearchInputProps = Omit<
+  InputHTMLAttributes<HTMLInputElement>,
+  "onChange"
+> & {
   value?: string;
   onChange?: (value: string) => void;
+  onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
   className?: string;
 };
 
 export default function SearchInput({
   value,
   onChange,
+  onKeyDown,
   className,
   ...props
 }: SearchInputProps) {
+  const handleSvgClick = () => {
+    // buat event palsu seperti tekan Enter
+    const fakeEvent = {
+      key: "Enter",
+    } as React.KeyboardEvent<HTMLInputElement>;
+    onKeyDown?.(fakeEvent);
+  };
+
   return (
     <div className="relative">
       <input
         type="search"
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
+        onKeyDown={onKeyDown}
         placeholder={props.placeholder ?? "Search here"}
         className={clsx(
           "w-full h-10 px-4 pr-12 text-sm transition-all border rounded outline-none",
@@ -41,6 +55,7 @@ export default function SearchInput({
         stroke="currentColor"
         strokeWidth={1.5}
         aria-hidden="true"
+        onClick={handleSvgClick}
       >
         <path
           strokeLinecap="round"

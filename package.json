@@ -19,7 +19,11 @@
     "react-dom": "19.2.0",
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
     "swiper": "^12.0.3",
+    "unified": "^11.0.5",
     "zustand": "^5.0.9"
   },
   "devDependencies": {
