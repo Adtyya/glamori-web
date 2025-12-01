@@ -12,13 +12,34 @@ import { useToc } from "../service/useToc";
 import Spinner from "@/components/spinner";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
+import { useEffect, useRef } from "react";
+import api from "@/lib/axios";
 
 type ReadBlogProps = {
   articleDetails: RootResponseByIdProps<ArticleProps>;
 };
 
 export default function ReadBlog({ articleDetails }: ReadBlogProps) {
+  const hasIncrement = useRef(false);
   const { toc, loading } = useToc(articleDetails.data.description);
+
+  useEffect(() => {
+    const slug = articleDetails?.data?.slug;
+    if (!slug) return;
+
+    if (hasIncrement.current) return;
+
+    const increment = async () => {
+      try {
+        await api.post(`/article/increment-view/${slug}`);
+        hasIncrement.current = true;
+      } catch (error) {
+        console.error("Failed to increment view:", error);
+      }
+    };
+
+    increment();
+  }, [articleDetails?.data?.slug]);
 
   return (
     <Container>
