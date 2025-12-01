@@ -10,6 +10,8 @@ type ReadProps = {
   };
 };
 
+export const revalidate = 0;
+
 async function fetchArticleBySlug(
   slug: string
 ): Promise<RootResponseByIdProps<ArticleProps>> {
