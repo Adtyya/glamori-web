@@ -59,3 +59,22 @@ export const menu_list_footer = [
     ],
   },
 ];
+
+export const menu_list_navbar = [
+  {
+    name: "Beranda",
+    path: "/",
+  },
+  {
+    name: "Tentang Kami",
+    path: "/tentang-glamori",
+  },
+  {
+    name: "Hubungi Kami",
+    path: "/hubungi-kami",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+  },
+];

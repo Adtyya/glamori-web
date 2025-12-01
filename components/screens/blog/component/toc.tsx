@@ -37,23 +37,37 @@ export default function TableOfContents({ items }: Props) {
   }, [items]);
 
   return (
-    <aside className="space-y-2 sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto p-2">
-      <Heading as={6}>Daftar Isi</Heading>
+    <aside className="p-4 space-y-4 overflow-y-auto bg-white border shadow-sm max-h-96 rounded-xl border-slate-200 w-fit">
+      <Heading
+        as={6}
+        className="text-sm font-bold tracking-wide text-slate-700"
+      >
+        Daftar Isi
+      </Heading>
 
-      <nav className="flex flex-col gap-1">
+      <nav className="flex flex-col gap-1.5">
         {items.map((item) => (
           <a
             key={item.id}
             href={`#${item.id}`}
             className={clsx(
-              "block text-base transition-colors hover:text-glamorig-500",
+              "relative block text-[15px] py-1.5 pl-3 rounded-lg transition-all duration-200 group",
               activeId === item.id
-                ? "text-glamorig-500 font-semibold"
-                : "text-slate-500",
+                ? "text-[#E3AC14] font-semibold bg-[#E3AC141A]"
+                : "text-slate-600 hover:text-[#E3AC14] hover:bg-[#E3AC140F]",
               item.level === 2 && "ml-3",
               item.level === 3 && "ml-6"
             )}
           >
+            {/* Indicator bar di kiri */}
+            <span
+              className={clsx(
+                "absolute left-0 top-0 h-full w-1 rounded-r-full transition-all duration-200",
+                activeId === item.id
+                  ? "bg-[#E3AC14] opacity-100"
+                  : "opacity-0 group-hover:opacity-60 bg-[#E3AC14]"
+              )}
+            />
             {item.text}
           </a>
         ))}

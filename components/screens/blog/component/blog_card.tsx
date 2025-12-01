@@ -1,40 +1,45 @@
 import { Heading, Paragraph } from "@/components/text";
+import { ArticleProps } from "@/types/article";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
+import { category_map } from "@/constant/category";
+import { formatDate } from "@/lib/formatdate";
 
-function FeaturedCard() {
+function FeaturedCard(props: ArticleProps) {
   return (
-    <Link href="/blog/read">
-      <div className="overflow-hidden transition-all duration-300 bg-white shadow-lg cursor-pointer rounded-2xl hover:shadow-2xl hover:-translate-y-1 group">
+    <Link href={`/blog/${props.slug}`}>
+      <div className="overflow-hidden transition-all duration-300 bg-white cursor-pointer rounded-2xl hover:-translate-y-1 group">
         <div className="relative w-full h-64 lg:h-96">
           <Image
-            src="https://placehold.co/1200x1200.png"
-            alt="test"
+            src={props.image}
+            alt={props.title}
             fill
             className="object-cover"
+            quality={100}
           />
         </div>
 
         <div className="flex flex-col gap-3 p-5">
           <Heading
-            as={4}
+            as={3}
             className="font-semibold leading-snug transition-colors group-hover:text-glamorig-500"
           >
-            Lorem, ipsum.
+            {props.title}
           </Heading>
 
           <Paragraph className="leading-relaxed text-gray-600 line-clamp-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil
-            provident non sapiente, ipsam corporis deleniti, velit temporibus
-            expedita itaque dicta deserunt corrupti alias! Sunt, ea consectetur!
-            Enim, quae ipsum.
+            {props.spoiler}
           </Paragraph>
 
           <div className="flex items-center gap-2 pt-1">
-            <span className="text-sm text-gray-500">10 Nov 2025</span>
+            <span className="text-sm text-gray-500">
+              {formatDate(props.updatedAt ?? props.date)}
+            </span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
-            <span className="text-sm text-gray-500">Skincare</span>
+            <span className="text-sm text-gray-500">
+              {category_map.find((r) => r.value === props.category)?.title}
+            </span>
           </div>
         </div>
       </div>
@@ -43,11 +48,15 @@ function FeaturedCard() {
 }
 
 type CardProps = {
-  spoiler?: boolean;
+  showSpoiler?: boolean;
   imageSize?: "normal" | "large";
 };
 
-function Card({ spoiler = false, imageSize = "normal" }: CardProps) {
+function Card({
+  showSpoiler = false,
+  imageSize = "normal",
+  ...props
+}: CardProps & ArticleProps) {
   const getSize = useMemo(() => {
     switch (imageSize) {
       case "normal":
@@ -55,17 +64,17 @@ function Card({ spoiler = false, imageSize = "normal" }: CardProps) {
       case "large":
         return "h-64";
       default:
-        break;
+        return "h-1";
     }
   }, [imageSize]);
 
   return (
-    <Link href="/blog/read">
-      <div className="overflow-hidden transition-all duration-300 bg-white shadow-lg cursor-pointer rounded-2xl hover:shadow-2xl hover:-translate-y-1 group">
+    <Link href={`/blog/${props.slug}`}>
+      <div className="overflow-hidden transition-all duration-300 bg-white cursor-pointer rounded-2xl hover:-translate-y-1 group">
         <div className={`relative w-full ${getSize}`}>
           <Image
-            src="https://placehold.co/1200x1200.png"
-            alt="test"
+            src={props.image}
+            alt={props.title}
             fill
             className="object-cover"
           />
@@ -73,25 +82,26 @@ function Card({ spoiler = false, imageSize = "normal" }: CardProps) {
 
         <div className="flex flex-col gap-3 p-5">
           <Heading
-            as={4}
-            className="font-semibold leading-snug transition-colors group-hover:text-glamorig-500 line-clamp-1"
+            as={6}
+            className="font-semibold leading-snug transition-colors group-hover:text-glamorig-500 line-clamp-2"
           >
-            Lorem, ipsum.
+            {props.title}
           </Heading>
 
-          {spoiler ? (
+          {showSpoiler ? (
             <Paragraph className="leading-relaxed text-gray-600 line-clamp-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nihil provident non sapiente, ipsam corporis deleniti, velit
-              temporibus expedita itaque dicta deserunt corrupti alias! Sunt, ea
-              consectetur! Enim, quae ipsum.
+              {props.spoiler}
             </Paragraph>
           ) : null}
 
           <div className="flex items-center gap-2 pt-1">
-            <span className="text-sm text-gray-500">10 Nov 2025</span>
+            <span className="text-sm text-gray-500">
+              {formatDate(props.updatedAt ?? props.date)}
+            </span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
-            <span className="text-sm text-gray-500">Skincare</span>
+            <span className="text-sm text-gray-500">
+              {category_map.find((r) => r.value === props.category)?.title}
+            </span>
           </div>
         </div>
       </div>

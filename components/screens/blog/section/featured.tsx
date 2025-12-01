@@ -3,8 +3,22 @@ import { SearchBar } from "@/components/input";
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import { Card, FeaturedCard } from "../component/blog_card";
+import type { BlogProps } from "../blog";
+import EmptyBlog from "../component/empty";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function FeaturedBlog() {
+export default function FeaturedBlog({ articleList }: BlogProps) {
+  const router = useRouter();
+
+  const [search, setSearch] = useState<string>("");
+
+  const latestArticle = articleList.data.docs[0];
+  const secondAndThirdArticle = articleList.data.docs.slice(1, 3);
+
+  const isLatestArticleAvailable = Boolean(latestArticle);
+  const isSecondAndThirdArticleAvailable = secondAndThirdArticle.length > 0;
+
   return (
     <Container>
       <div className="py-12">
@@ -21,19 +35,42 @@ export default function FeaturedBlog() {
             </div>
           </div>
           <div className="w-96">
-            <SearchBar />
+            <SearchBar
+              onChange={(value: string) => setSearch(value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  if (!search) return;
+                  router.push(`/blog/search?query=${search}`);
+                }
+              }}
+            />
           </div>
         </div>
         <div className="mt-5">
           <div className="grid gap-3.5 grid-cols-1 md:grid-cols-12">
-            <div className="col-span-12 md:col-span-8 lg:col-span-9">
-              <FeaturedCard />
-            </div>
+            {!isLatestArticleAvailable ? (
+              <div className="col-span-12 md:col-span-8 lg:col-span-9">
+                <EmptyBlog />
+              </div>
+            ) : (
+              <div className="col-span-12 md:col-span-8 lg:col-span-9">
+                <FeaturedCard {...latestArticle} />
+              </div>
+            )}
 
-            <div className="col-span-12 md:col-span-4 lg:col-span-3 grid grid-cols-1 gap-3.5 mt-3 md:mt-0">
-              <Card />
-              <Card />
-            </div>
+            {!isSecondAndThirdArticleAvailable ? (
+              <div className="col-span-12 md:col-span-4 lg:col-span-3 grid grid-cols-1 gap-3.5 mt-3 md:mt-0">
+                <EmptyBlog />
+              </div>
+            ) : (
+              <div className="col-span-12 md:col-span-4 lg:col-span-3 grid grid-cols-1 gap-3.5 mt-3 md:mt-0">
+                {secondAndThirdArticle.map((article) => {
+                  return (
+                    <Card key={article._id} imageSize="normal" {...article} />
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </div>

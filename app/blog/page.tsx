@@ -1,5 +1,10 @@
 import Blog from "@/components/screens/blog/blog";
+import api from "@/lib/axios";
 import { Metadata } from "next";
+import type { RootResponseProps } from "@/types/response";
+import type { ArticleProps } from "@/types/article";
+
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: {
@@ -69,6 +74,33 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
-  return <Blog />;
+async function fetchAllArticle(): Promise<RootResponseProps<ArticleProps>> {
+  try {
+    const res = await api.get("/article?perPage=25&page=1");
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching blog data !");
+    return {
+      status: 500,
+      message: `Failed to fetch article ! ${error}`,
+      data: {
+        docs: [],
+        totalDocs: 0,
+        limit: 0,
+        totalPages: 0,
+        page: 0,
+        pagingCounter: 0,
+        hasPrevPage: false,
+        hasNextPage: false,
+        prevPage: false,
+        nextPage: false,
+      },
+    };
+  }
+}
+
+export default async function BlogPage() {
+  const articleList = await fetchAllArticle();
+
+  return <Blog {...{ articleList }} />;
 }
