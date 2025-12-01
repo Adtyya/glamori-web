@@ -34,7 +34,7 @@ export default function LatestBlog() {
 
 function Card() {
   return (
-    <div className="overflow-hidden transition-all duration-300 bg-white shadow-lg cursor-pointer rounded-2xl hover:shadow-2xl hover:-translate-y-1 group">
+    <div className="overflow-hidden transition-all duration-300 bg-white cursor-pointer rounded-2xl hover:-translate-y-1 group">
       <div className="relative w-full h-64">
         <Image
           src="https://placehold.co/600x600.png"

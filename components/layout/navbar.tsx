@@ -5,25 +5,7 @@ import { glamori_logo_navbar } from "@/constant/image";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
-const path_list = [
-  {
-    name: "Beranda",
-    path: "/",
-  },
-  {
-    name: "Tentang Kami",
-    path: "/tentang-glamori",
-  },
-  {
-    name: "Hubungi Kami",
-    path: "/hubungi-kami",
-  },
-  {
-    name: "Blog",
-    path: "/blog",
-  },
-];
+import { menu_list_navbar } from "@/constant/navigation";
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -92,7 +74,7 @@ export default function Navbar() {
                   : "invisible opacity-0"
               }`}
             >
-              {path_list.map((r, i) => {
+              {menu_list_navbar.map((r, i) => {
                 return (
                   <li role="none" className="flex items-stretch" key={i}>
                     <Link
