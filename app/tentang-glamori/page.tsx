@@ -59,14 +59,14 @@ export const metadata: Metadata = {
     siteName: "Glamori App",
     locale: "id_ID",
     alternateLocale: ["en_US"],
-    // images: [
-    //   {
-    //     url: "https://glamori.app/og-about-us.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Glamori Aesthetic Clinic — About Us",
-    //   },
-    // ],
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+        }/assets/logo/glamori_white_square.png`,
+        alt: "Glamori Aesthetic Clinic — About Us",
+      },
+    ],
   },
 
   twitter: {
@@ -74,7 +74,11 @@ export const metadata: Metadata = {
     title: "Tentang Kami — Glamori App",
     description:
       "Profil Glamori Aesthetic Clinic, platform kecantikan modern dengan layanan treatment berkualitas tinggi untuk wajah, tubuh, dan estetika premium.",
-    // images: ["https://glamori.app/og-about-us.jpg"],
+    images: [
+      `${
+        process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+      }/assets/logo/glamori_white_square.png`,
+    ],
     site: "@GlamoriApp",
     creator: "@GlamoriApp",
   },

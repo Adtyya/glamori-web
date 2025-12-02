@@ -22,38 +22,40 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Glamori Aesthetic Clinic",
-      url: "https://glamori.app",
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     },
   ],
   creator: "Glamori App",
   publisher: "Glamori Aesthetic Clinic",
   category: "Beauty & Aesthetic",
-  metadataBase: new URL("https://glamori.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+  ),
 
   alternates: {
-    canonical: "https://glamori.app/lokasi",
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     languages: {
-      "id-ID": "https://glamori.app/lokasi",
+      "id-ID": `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app/lokasi",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     title: "Lokasi Glamori — Alamat & Cabang Glamori Aesthetic Clinic",
     description:
       "Temukan alamat dan cabang Glamori Aesthetic Clinic beserta rute, detail lokasi, dan jam layanan untuk pengalaman kunjungan yang nyaman.",
     siteName: "Glamori App",
     locale: "id_ID",
     alternateLocale: ["en_US"],
-    // images: [
-    //   {
-    //     url: "https://glamori.app/og-lokasi.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Lokasi Glamori Aesthetic Clinic",
-    //   },
-    // ],
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+        }/assets/logo/glamori_white_square.png`,
+        alt: "Lokasi Glamori Aesthetic Clinic",
+      },
+    ],
   },
 
   twitter: {
@@ -61,7 +63,11 @@ export const metadata: Metadata = {
     title: "Lokasi Glamori — Alamat & Cabang Glamori Aesthetic Clinic",
     description:
       "Detail lokasi Glamori Aesthetic Clinic lengkap dengan alamat, jam operasional, dan informasi akses bagi pengunjung.",
-    // images: ["https://glamori.app/og-lokasi.jpg"],
+    images: [
+      `${
+        process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+      }/assets/logo/glamori_white_square.png`,
+    ],
     site: "@GlamoriApp",
     creator: "@GlamoriApp",
   },

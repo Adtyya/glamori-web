@@ -20,7 +20,6 @@ export async function GET() {
     const data = response?.data?.data?.docs;
     allPosts.push(...data);
 
-    // Check if there are more pages
     hasMore = data.length === pageSize;
     page++;
   }

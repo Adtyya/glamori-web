@@ -33,15 +33,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://glamori.app"),
 
   alternates: {
-    canonical: "https://glamori.app/blog/search",
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/blog/search`,
     languages: {
-      "id-ID": "https://glamori.app/blog/search",
+      "id-ID": `${process.env.NEXT_PUBLIC_APP_URL}/blog/search`,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app/blog/search",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/search`,
     title: "Pencarian Blog — Glamori App",
     description:
       "Hasil pencarian artikel terbaru di Blog Glamori seputar dunia kecantikan, skincare, anti-aging, dan perawatan estetika berbasis teknologi medis modern.",
