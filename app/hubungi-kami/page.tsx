@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     siteName: "Glamori App",
     locale: "id_ID",
     alternateLocale: ["en_US"],
-    // images: [
-    //   {
-    //     url: "https://glamori.app/og-lokasi.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Lokasi Glamori Aesthetic Clinic",
-    //   },
-    // ],
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+        }/assets/logo/glamori_white_square.png`,
+        alt: "Lokasi Glamori Aesthetic Clinic",
+      },
+    ],
   },
 
   twitter: {
@@ -63,7 +63,11 @@ export const metadata: Metadata = {
     title: "Lokasi Glamori — Alamat & Cabang Glamori Aesthetic Clinic",
     description:
       "Detail lokasi Glamori Aesthetic Clinic lengkap dengan alamat, jam operasional, dan informasi akses bagi pengunjung.",
-    // images: ["https://glamori.app/og-lokasi.jpg"],
+    images: [
+      `${
+        process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+      }/assets/logo/glamori_white_square.png`,
+    ],
     site: "@GlamoriApp",
     creator: "@GlamoriApp",
   },

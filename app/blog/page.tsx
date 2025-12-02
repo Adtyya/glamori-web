@@ -55,14 +55,14 @@ export const metadata: Metadata = {
     siteName: "Glamori App",
     locale: "id_ID",
     alternateLocale: ["en_US"],
-    // images: [
-    //   {
-    //     url: "https://glamori.app/og-blog.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Blog Glamori — Artikel Kecantikan & Aesthetic",
-    //   },
-    // ],
+    images: [
+      {
+        url: `${
+          process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+        }/assets/logo/glamori_white_square.png`,
+        alt: "Blog Glamori — Artikel Kecantikan & Aesthetic",
+      },
+    ],
   },
 
   twitter: {
@@ -70,7 +70,11 @@ export const metadata: Metadata = {
     title: "Blog Glamori — Artikel Kecantikan & Aesthetic Treatment",
     description:
       "Sumber informasi seputar dunia kecantikan, skincare, anti-aging, dan perawatan estetika berbasis teknologi modern.",
-    // images: ["https://glamori.app/og-blog.jpg"],
+    images: [
+      `${
+        process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+      }/assets/logo/glamori_white_square.png`,
+    ],
     site: "@GlamoriApp",
     creator: "@GlamoriApp",
   },
