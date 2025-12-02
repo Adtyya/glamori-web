@@ -3,6 +3,8 @@ import { Heading } from "@/components/text";
 import { Card } from "../component/blog_card";
 import { BlogProps } from "../blog";
 import EmptyBlog from "../component/empty";
+import Button from "@/components/button";
+import Link from "next/link";
 
 export default function OtherPost({ articleList }: BlogProps) {
   const articleSlice = articleList?.data?.docs?.slice(3) || [];
@@ -21,6 +23,11 @@ export default function OtherPost({ articleList }: BlogProps) {
               {articleSlice.map((article) => (
                 <Card key={article._id} imageSize="normal" {...article} />
               ))}
+            </div>
+            <div className="flex items-center justify-center mt-5">
+              <Link href="/blog/lihat-semua/1" prefetch>
+                <Button>lihat semua blog</Button>
+              </Link>
             </div>
           </div>
         )}

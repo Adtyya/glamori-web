@@ -29,24 +29,26 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Glamori Aesthetic Clinic",
-      url: "https://glamori.app",
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/blog`,
     },
   ],
   creator: "Glamori App",
   publisher: "Glamori Aesthetic Clinic",
   category: "Beauty & Aesthetic",
-  metadataBase: new URL("https://glamori.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+  ),
 
   alternates: {
-    canonical: "https://glamori.app/blog",
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/blog`,
     languages: {
-      "id-ID": "https://glamori.app/blog",
+      "id-ID": `${process.env.NEXT_PUBLIC_APP_URL}/blog`,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app/blog",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/blog`,
     title: "Blog Glamori — Artikel Kecantikan & Aesthetic Treatment",
     description:
       "Kumpulan artikel informatif seputar skincare, facial treatment, contouring, anti-aging, dan panduan memilih perawatan kecantikan yang tepat.",

@@ -22,24 +22,26 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Glamori Aesthetic Clinic",
-      url: "https://glamori.app",
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     },
   ],
   creator: "Glamori App",
   publisher: "Glamori Aesthetic Clinic",
   category: "Beauty & Aesthetic",
-  metadataBase: new URL("https://glamori.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://glamori-web.vercel.app"
+  ),
 
   alternates: {
-    canonical: "https://glamori.app/lokasi",
+    canonical: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     languages: {
-      "id-ID": "https://glamori.app/lokasi",
+      "id-ID": `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     },
   },
 
   openGraph: {
     type: "website",
-    url: "https://glamori.app/lokasi",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/hubungi-kami`,
     title: "Lokasi Glamori — Alamat & Cabang Glamori Aesthetic Clinic",
     description:
       "Temukan alamat dan cabang Glamori Aesthetic Clinic beserta rute, detail lokasi, dan jam layanan untuk pengalaman kunjungan yang nyaman.",
