@@ -2,6 +2,20 @@ import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import { glamori_team_sample } from "@/constant/image";
 import Image from "next/image";
+import { dokter_cahyani, dokter_rista } from "@/constant/image";
+
+const list_team = [
+  {
+    name: "dr. Rista Febriana",
+    branch: "Lampung",
+    image: dokter_rista,
+  },
+  {
+    name: "dr. Cahyani Putry",
+    branch: "Lampung",
+    image: dokter_cahyani,
+  },
+];
 
 export default function OurTeam() {
   return (
@@ -14,9 +28,9 @@ export default function OurTeam() {
         </div>
         <div className="w-full max-w-5xl mx-auto mt-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-            <Card />
-            <Card />
-            <Card />
+            {list_team.map((team) => {
+              return <Card key={team.name} {...team} />;
+            })}
           </div>
         </div>
       </div>
@@ -24,9 +38,16 @@ export default function OurTeam() {
   );
 }
 
-function Card() {
+type CardProps = {
+  image: string;
+  name: string;
+  branch: string;
+};
+
+function Card({ image, name, branch }: CardProps) {
   return (
     <div className="overflow-hidden rounded-t-full drop-shadow-xl">
+      {/* IMAGE */}
       <div
         className="relative w-full h-96"
         style={{
@@ -34,18 +55,19 @@ function Card() {
             "linear-gradient(180.24deg, #FFFFFF 12.52%, #FCEBA0 81.03%, #EEC74B 99.82%)",
         }}
       >
-        <Image
-          src={glamori_team_sample}
-          alt="sample"
-          fill
-          className="object-contain"
-        />
+        <Image src={image} alt="sample" fill className="object-cover" />
       </div>
-      <div className="bg-glamorig-100 p-3.5 flex items-center justify-center">
-        <Paragraph className="!text-glamorig-500 font-semibold" size="lg">
-          Name
+
+      <div className="bg-glamorig-100 px-4 py-2 flex flex-col items-center justify-center gap-0.5">
+        <Paragraph className="!text-glamorig-600 font-semibold" size="lg">
+          {name}
+        </Paragraph>
+        <Paragraph className="!text-glamorig-500 font-semibold" size="sm">
+          Klinik Glamori {branch}
         </Paragraph>
       </div>
+
+      {/* CTA */}
       <div className="bg-glamorig-500 p-3.5 flex items-center justify-center rounded-b-2xl">
         <a href="">
           <Paragraph size="lg" className="font-semibold !text-white">

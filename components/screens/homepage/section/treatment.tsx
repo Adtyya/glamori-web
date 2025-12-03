@@ -8,6 +8,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import Link from "next/link";
+import { treatment_list } from "@/constant/treatment";
 
 export default function Treatment() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
@@ -97,18 +98,13 @@ export default function Treatment() {
               pauseOnMouseEnter: true,
             }}
           >
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
+            {treatment_list.map((treatment) => {
+              return (
+                <SwiperSlide className="py-3.5" key={treatment.title}>
+                  <Card {...treatment} />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
@@ -116,12 +112,18 @@ export default function Treatment() {
   );
 }
 
-function Card() {
+type CardProps = {
+  title: string;
+  spoiler?: string;
+  slug: string;
+};
+
+function Card({ title, spoiler, slug }: CardProps) {
   return (
     <div className="w-full border-2 border-glamorig-500 rounded-2xl overflow-hidden hover:-translate-y-3.5 hover:drop-shadow-md duration-300">
       <div className="px-1.5 py-5 border-b-2 border-glamorig-500 text-center">
         <Paragraph size="lg" className="font-semibold !text-glamorig-500">
-          Facial Treatment
+          {title}
         </Paragraph>
       </div>
       <div className="relative w-full h-96">
@@ -133,17 +135,12 @@ function Card() {
         />
       </div>
       <div className="p-2.5">
-        <Paragraph className="font-medium">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sequi
-          pariatur non velit hic quod iusto voluptatem, ducimus optio itaque
-          impedit earum ratione deleniti quas est sint provident distinctio
-          consectetur accusantium enim voluptatibus expedita. Minus debitis
-          deleniti maxime omnis vero cupiditate fugiat eveniet nam, sit sunt
-          dolorem autem eum accusantium.
+        <Paragraph className="font-medium text-justify line-clamp-3">
+          {spoiler}
         </Paragraph>
       </div>
       <div className="px-2.5 pb-5 flex items-center justify-center">
-        <Link href="/product/facial-treatment">
+        <Link href={`/product/${slug}`}>
           <Button>Lihat Selengkapnya</Button>
         </Link>
       </div>

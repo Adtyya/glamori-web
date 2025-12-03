@@ -24,7 +24,7 @@ const branch_list = [
 export default function Footer() {
   const handleSelectBranch = (value: string) => {
     const message = encodeURIComponent(
-      "Halo kak, saya ingin konsultasi dan bertanya mengenai treatment yang tersedia 😊"
+      "Halo kak, saya ingin konsultasi dan bertanya mengenai treatment yang tersedia"
     );
 
     if (value === "glamori-lampung") {
@@ -93,13 +93,9 @@ export default function Footer() {
               <div className="flex flex-col items-start">
                 <Paragraph className="font-semibold">Hubungi Kami</Paragraph>
                 <div className="flex flex-wrap items-center gap-4 mt-2">
-                  <a
-                    href={process.env.NEXT_PUBLIC_WHATSAPP}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href="/hubungi-kami">
                     <FaWhatsapp size={22} />
-                  </a>
+                  </Link>
                   <a
                     href={process.env.NEXT_PUBLIC_INSTAGRAM}
                     target="_blank"
