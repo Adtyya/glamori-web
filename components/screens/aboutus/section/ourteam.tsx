@@ -12,9 +12,8 @@ export default function OurTeam() {
             bertemu dengan tim kami
           </Heading>
         </div>
-        <div className="mt-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
-            <Card />
+        <div className="w-full max-w-5xl mx-auto mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
             <Card />
             <Card />
             <Card />

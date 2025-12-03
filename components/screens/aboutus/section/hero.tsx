@@ -1,19 +1,20 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
+import { glamori_logo_big } from "@/constant/image";
 
 export default function Hero() {
   return (
     <Container>
       <div className="py-12">
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
-          <div className="col-span-full lg:col-span-1">
+          <div className="flex items-center col-span-full lg:col-span-1">
             <div className="relative w-full overflow-hidden aspect-square rounded-2xl">
               <Image
-                src="https://placehold.co/600x600.png"
-                alt="test"
+                src={glamori_logo_big}
+                alt="glamori_logo"
                 fill
-                className="object-cover"
+                className="object-contain scale-75"
               />
             </div>
           </div>

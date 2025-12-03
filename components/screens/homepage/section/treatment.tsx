@@ -21,7 +21,7 @@ export default function Treatment() {
               Treatments
             </Paragraph>
             <Heading as={3} className="capitalize">
-              what we can do for you
+              Apa yang Bisa Kami Lakukan untuk Anda
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>

@@ -5,6 +5,7 @@ import { useArticles } from "../service/useArticle";
 import { Card } from "../../blog/component/blog_card";
 import EmptyBlog from "../../blog/component/empty";
 import Spinner from "@/components/spinner";
+import Button from "@/components/button";
 
 export default function LatestBlog() {
   const { articles, loading, error } = useArticles(3);
@@ -20,7 +21,7 @@ export default function LatestBlog() {
               News & Blog
             </Paragraph>
             <Heading as={3} className="capitalize">
-              our latest news & blog
+              Berita & Artikel Terbaru dari Kami
             </Heading>
             <div className="flex items-center justify-start mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
@@ -32,16 +33,21 @@ export default function LatestBlog() {
           {isArticlesEmpty ? (
             <EmptyBlog />
           ) : (
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {articles.map((article) => (
-                <Card
-                  key={article._id}
-                  imageSize="normal"
-                  showSpoiler
-                  {...article}
-                />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {articles.map((article) => (
+                  <Card
+                    key={article._id}
+                    imageSize="normal"
+                    showSpoiler
+                    {...article}
+                  />
+                ))}
+              </div>
+              <div className="flex items-center justify-center mt-3.5">
+                <Button>Lihat Selengkapnya</Button>
+              </div>
+            </>
           )}
         </div>
       </div>

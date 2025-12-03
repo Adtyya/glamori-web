@@ -13,7 +13,7 @@ export default function FollowInstagram() {
               Follow Us
             </Paragraph>
             <Heading as={3} className="capitalize">
-              follow us on instagram
+              Ikuti Kami di Instagram
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
@@ -53,7 +53,7 @@ export default function FollowInstagram() {
 
 function Card() {
   return (
-    <div className="relative w-full overflow-hidden h-52 aspect-square rounded-2xl">
+    <div className="relative w-full overflow-hidden h-52 lg:h-72 rounded-2xl">
       <Image
         src="https://placehold.co/600x600.png"
         alt="test"
