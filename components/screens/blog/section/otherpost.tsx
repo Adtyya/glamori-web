@@ -13,7 +13,7 @@ export default function OtherPost({ articleList }: BlogProps) {
   return (
     <Container>
       <div className="py-12">
-        <Heading>Other Articles</Heading>
+        <Heading>Artikel Lainnya</Heading>
 
         {isEmpty ? (
           <EmptyBlog />

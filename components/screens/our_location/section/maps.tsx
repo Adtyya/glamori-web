@@ -26,10 +26,15 @@ export default function Maps() {
             className="w-full border-none h-96"
           ></iframe>
           <div className="flex items-center justify-center">
-            <Button className="font-semibold !py-5 lg:!py-2">
-              <FaWhatsapp className="w-7 h-7" />
-              <span className="hidden lg:block">Reservasi Sekarang</span>
-            </Button>
+            <a
+              href="https://wa.me/6285270010701?text=Halo, saya mau reservasi"
+              target="_blank"
+            >
+              <Button className="py-2 font-semibold">
+                <FaWhatsapp className="w-7 h-7" />
+                <span className="block">Reservasi Sekarang</span>
+              </Button>
+            </a>
           </div>
         </div>
         <br />
@@ -49,10 +54,15 @@ export default function Maps() {
             className="w-full border-none h-96"
           ></iframe>
           <div className="flex items-center justify-center">
-            <Button className="font-semibold !py-5 lg:!py-2">
-              <FaWhatsapp className="w-7 h-7" />
-              <span className="hidden lg:block">Reservasi Sekarang</span>
-            </Button>
+            <a
+              href="https://wa.me/6289606000101?text=Halo, saya mau reservasi"
+              target="_blank"
+            >
+              <Button className="py-2 font-semibold">
+                <FaWhatsapp className="w-7 h-7" />
+                <span className="block">Reservasi Sekarang</span>
+              </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -19,17 +19,17 @@ export default function Testimonial() {
               Testimonials
             </Paragraph>
             <Heading as={3} className="capitalize">
-              what our customer say?
+              Apa Kata Pelanggan Kami
             </Heading>
             <div className="flex items-center justify-center mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
             </div>
           </div>
         </div>
-        <div className="mt-5 relative">
+        <div className="relative mt-5">
           <button
             onClick={() => swiperInstance?.slidePrev()}
-            className="absolute -left-20 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-glamorig-500 text-white rounded-full lg:flex items-center justify-center hover:bg-glamorig-600 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer hidden"
+            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -left-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Previous slide"
             disabled={!swiperInstance}
           >
@@ -51,7 +51,7 @@ export default function Testimonial() {
 
           <button
             onClick={() => swiperInstance?.slideNext()}
-            className="absolute -right-20 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-glamorig-500 text-white rounded-full lg:flex items-center justify-center hover:bg-glamorig-600 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer hidden"
+            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -right-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Next slide"
             disabled={!swiperInstance}
           >
@@ -116,7 +116,7 @@ export default function Testimonial() {
 
 function Card() {
   return (
-    <div className="w-full h-96 relative">
+    <div className="relative w-full h-96">
       <Image
         src="https://placehold.co/600x600.png"
         alt="test"

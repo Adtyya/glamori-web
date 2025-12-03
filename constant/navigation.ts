@@ -9,6 +9,27 @@ export const menu_list_footer = [
     ],
   },
   {
+    title: "Quick Links",
+    content: [
+      {
+        text: "Beranda",
+        path: "/",
+      },
+      {
+        text: "Tentang Kami",
+        path: "/tentang-glamori",
+      },
+      {
+        text: "Hubungi Kami",
+        path: "/hubungi-kami",
+      },
+      {
+        text: "Blog",
+        path: "/blog",
+      },
+    ],
+  },
+  {
     title: "Treatment",
     content: [
       {
@@ -41,19 +62,6 @@ export const menu_list_footer = [
       },
       {
         text: "Miss V Treatment",
-        path: "/",
-      },
-    ],
-  },
-  {
-    title: "Lainnya",
-    content: [
-      {
-        text: "Privacy Policy",
-        path: "/",
-      },
-      {
-        text: "Terms Of Service",
         path: "/",
       },
     ],

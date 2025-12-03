@@ -28,7 +28,7 @@ export default function FeaturedBlog({ articleList }: BlogProps) {
               News & Blog
             </Paragraph>
             <Heading as={3} className="capitalize">
-              our latest news & blog
+              Berita & Artikel Terbaru dari Kami
             </Heading>
             <div className="hidden lg:flex items-center justify-start mt-3.5">
               <div className="w-2/4 bg-glamoris-900 h-0.5 rounded-full"></div>
