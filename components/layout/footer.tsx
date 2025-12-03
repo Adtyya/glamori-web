@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Container from "./container";
 import Image from "next/image";
@@ -6,17 +8,45 @@ import { Paragraph } from "../text";
 import { menu_list_footer } from "@/constant/navigation";
 import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
-import Button from "../button";
+import Dropdown from "../button/dropdown";
+
+const branch_list = [
+  {
+    label: "Glamori Lampung",
+    value: "glamori-lampung",
+  },
+  {
+    label: "Glamori Jakarta",
+    value: "glamori-jakarta",
+  },
+];
 
 export default function Footer() {
+  const handleSelectBranch = (value: string) => {
+    const message = encodeURIComponent(
+      "Halo kak, saya ingin konsultasi dan bertanya mengenai treatment yang tersedia 😊"
+    );
+
+    if (value === "glamori-lampung") {
+      window.open(`https://wa.me/6289606000101?text=${message}`, "_blank");
+      return;
+    }
+
+    window.open(`https://wa.me/6285270010701?text=${message}`, "_blank");
+  };
+
   return (
     <>
       {/* Tombol Chat WhatsApp */}
-      <div className="fixed z-10 right-4 bottom-4 lg:right-10 lg:bottom-10 lg:block">
-        <Button className="font-semibold !py-5 lg:!py-2">
+      <div className="fixed z-20 right-4 bottom-4 lg:right-10 lg:bottom-10 lg:block">
+        <Dropdown
+          items={branch_list}
+          direction="up"
+          onSelect={handleSelectBranch}
+        >
           <FaWhatsapp className="w-7 h-7" />
-          <span className="hidden lg:block">Chat WhatsApp</span>
-        </Button>
+          <span className="block">Chat WhatsApp</span>
+        </Dropdown>
       </div>
       <div className="relative px-4 py-8 bg-glamorig-200 lg:px-0">
         <div
