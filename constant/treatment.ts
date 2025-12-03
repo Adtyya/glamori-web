@@ -1,13 +1,14 @@
 export const treatment_list = [
   {
     title: "Facial Treatment",
-    subtitle: `
+    slug: "facial-treatment",
+    spoiler:
+      "Rangkaian facial untuk membersihkan kulit, mengatasi jerawat, mencerahkan, serta memberi efek glowing. Tersedia berbagai jenis sesuai kebutuhan kulit—mulai dari acne, whitening, glowing, hingga aqua facial.",
+    subtitle: String.raw`
 Perawatan facial merupakan metode efektif untuk membersihkan kulit dari jerawat dan komedo. Selain itu, facial membantu mengurangi penyumbatan pori-pori, meningkatkan sirkulasi darah pada area wajah, serta meremajakan kulit. Hasilnya, wajah tampak lebih bersih dan segar.
 
 
 ## **Jenis-Jenis Facial**
-
-
 ### **1. Bye-Bye Acne**
 
 _(Facial + Peeling + Laser Acne)_
@@ -91,7 +92,10 @@ Beberapa klinik menghadirkan variasi signature facial dengan teknologi atau baha
   },
   {
     title: "Skin Quality",
-    subtitle: `
+    slug: "skin-quality",
+    spoiler:
+      "Serangkaian perawatan injeksi untuk meningkatkan kualitas kulit dari dalam—lebih cerah, kenyal, lembap, dan sehat. Tersedia pilihan mulai dari Sylfirm X, PRP, Glow Stamp, hingga berbagai varian Skin Booster seperti DNA Salmon, Plumper, dan Skin Glow. Cocok untuk mengatasi flek, pori besar, tekstur kasar, kemerahan, hingga tanda penuaan.",
+    subtitle: String.raw`
 kualitas kulit yang dibuat sebaik dan seoptimal mungkin dengan metode injeksi pada intradermal atau
 subdermal kulit dengan menyuntikan berbagai bahan aktif yang dapat meningkatkan kesehatan dan kualitas
 kulit dari dalam.
@@ -246,6 +250,9 @@ Treatment dengan polynucleotide (DNA salmon) yang berfungsi untuk:
   },
   {
     title: "Laser Face & body",
+    slug: "laser-face-and-body",
+    spoiler:
+      "Serangkaian perawatan laser modern untuk menangani pigmentasi, bekas jerawat, flek, kemerahan, bulu halus, hingga pembuluh darah tampak. Pilihannya mencakup Pico Laser, Premium Booster, Fat Laser, DPL Laser, Derma Hair Removal, dan Vascular Laser—semuanya dirancang untuk hasil optimal dan kulit yang lebih cerah, bersih, dan merata.",
     subtitle: `Berbagai teknologi laser modern digunakan untuk menangani masalah kulit secara efektif, mulai dari pigmentasi, bekas jerawat, hingga peremajaan kulit. Setiap prosedur dirancang untuk memberikan hasil optimal dengan tingkat keamanan yang tinggi.
 
 
@@ -333,6 +340,9 @@ Perawatan khusus untuk menangani masalah pembuluh darah seperti spider veins, te
   },
   {
     title: "Face Contouring",
+    slug: "face-contouring",
+    spoiler: `Serangkaian treatment face contouring untuk membentuk dan menyeimbangkan fitur wajah—mulai dari mengencangkan kulit, merampingkan pipi, memperbaiki struktur hidung dan dagu, hingga meremajakan area mata. Pilihannya mencakup ThreadLift, Botox, Filler, Buccal Fat Removal, Eyebag Fat Removal, Korean Double Eyelid, Ultralift (HIFU), dan Lippo Modeling.
+Hasil umumnya natural, aman, dan dapat bertahan dari beberapa bulan hingga permanen tergantung prosedurnya.`,
     subtitle: `Tindakan face contouring bertujuan memperindah dan menyeimbangkan bentuk wajah, seperti memancungkan hidung, mempercantik bibir, menambah volume dagu, mengurangi kerutan, hingga mengencangkan kulit yang mulai kendur. Selain memberikan koreksi bentuk, prosedur ini juga membantu menjaga kesehatan kulit. Hasil umumnya bertahan **12–18 bulan**.
 
 
@@ -457,6 +467,9 @@ Lemak diambil melalui teknik sedot lemak, diolah, lalu disuntikkan kembali ke ar
   },
   {
     title: "Body Slimming",
+    slug: "body-slimming",
+    spoiler:
+      "Program Body Slimming dirancang untuk membantu membentuk tubuh lebih ideal secara aman dan efektif. Pilihannya meliputi Slimming Injection untuk menargetkan lemak membandel, Fat Laser untuk menghancurkan lemak sekaligus mengencangkan kulit, serta Produk Slimming Glamori yang membantu mengontrol nafsu makan, meningkatkan metabolisme, dan mengurangi penyerapan lemak. Semua prosedur dan produk dibuat aman untuk mendukung hasil maksimal.",
     subtitle: `Memiliki tubuh yang proporsional, sehat, dan ideal bukan sekadar soal penampilan—itu juga bagian dari kualitas hidup yang lebih baik. Program Body Slimming kami dirancang untuk membantu Anda mencapai bentuk tubuh yang lebih optimal secara aman dan efektif.
 
 ### **Slimming Injection**
@@ -486,6 +499,9 @@ Semua produk telah teruji aman, tidak memiliki efek samping, dan dirancang untuk
   },
   {
     title: "Miss V Series",
+    slug: "miss-v-series",
+    spoiler:
+      "Perawatan intim wanita dirancang untuk menjaga kebersihan, kesehatan, dan kekencangan area kewanitaan. Layanannya meliputi V-Rejuvenation untuk membersihkan dan meremajakan jaringan, V-FEMILIFT (PRP) untuk meningkatkan tekstur dan sensitivitas, V-Inject untuk mengencangkan jaringan intim, V-Shoot dengan ultrasound non-invasif untuk meningkatkan elastisitas, serta V-Lift dan V-Fill untuk memperbaiki bentuk area intim agar lebih sehat dan proporsional. Semua prosedur diformulasikan aman, nyaman, dan membantu meningkatkan kepercayaan diri.",
     subtitle: `Menjaga kesehatan dan kecantikan tubuh merupakan bagian penting dari kualitas hidup setiap wanita. Tidak hanya wajah dan tubuh, area intim juga memerlukan perhatian khusus agar tetap bersih, sehat, kencang, dan terawat. Kondisi area intim yang sehat dan estetik dapat membantu meningkatkan rasa percaya diri sekaligus menciptakan hubungan rumah tangga yang lebih harmonis.
 
 
@@ -592,6 +608,9 @@ Kelebihannya:
   },
   {
     title: "Bust Treatment",
+    slug: "bust-treatment",
+    spoiler:
+      "Rangkaian perawatan payudara di Glamori Clinic dirancang untuk membantu mengencangkan, menambah volume, dan memperbaiki tampilan payudara secara aman. Pilihannya mencakup B-Lift untuk meningkatkan elastisitas dan mengangkat payudara, B-Fill untuk menambah volume dan membentuk lekuk, B-Treatment sebagai opsi non-invasif untuk mengencangkan kulit, serta B-Inject untuk memperkuat otot dada agar payudara tampak lebih terangkat. Setiap prosedur memberikan hasil bertahap hingga instan, dengan durasi ketahanan yang bervariasi sesuai jenis treatment.",
     subtitle: `Memiliki payudara yang sehat, kencang, dan proporsional adalah impian banyak wanita. Seiring bertambahnya usia, penurunan elastisitas kulit dan jaringan dapat menyebabkan payudara tampak kurang kencang. Glamori Clinic menghadirkan rangkaian perawatan khusus yang dirancang untuk membantu mengembalikan bentuk, kekencangan, dan keindahan payudara dengan metode yang aman dan efektif.
 
 
@@ -666,6 +685,9 @@ Perawatan rejuvenasi dengan penyuntikan ke area otot dada untuk merangsang penge
   },
   {
     title: "Eyes Treatment",
+    slug: "eyes-treatment",
+    spoiler:
+      "Perawatan area mata kini makin diminati karena mampu mengatasi kantung mata, lingkaran hitam, kekenduran, hingga bentuk kelopak yang kurang tegas. Melalui Eye Booster, Eyebag Fat Removal, dan Korean Double Eyelid, Anda bisa mendapatkan tampilan mata yang lebih segar, kencang, dan proporsional tanpa prosedur yang rumit.",
     subtitle: `
 
 
@@ -689,6 +711,9 @@ Prosedur kelopak mata yang bertujuan memberikan lipatan mata (“double eyelid�
   },
   {
     title: "Lips Treatment",
+    slug: "lips-treatment",
+    spoiler:
+      "Perawatan bibir seperti Lips Booster, Cherry Lips, dan Lips Filler membantu membuat bibir lebih lembap, merona alami, serta lebih penuh dan proporsional dengan hasil yang tetap natural.",
     subtitle: `## **Lips Booster**
 
 Perawatan intensif menggunakan serum khusus dengan Hyaluronic Acid untuk meningkatkan kelembapan alami bibir. Treatment ini memberikan efek plump yang membuat bibir tampak lebih penuh, mengurangi garis halus, serta mencerahkan warna bibir sehingga terlihat sehat dan segar.
@@ -710,10 +735,16 @@ Perawatan untuk membentuk ulang kontur bibir, menambah volume, serta mengembalik
   },
   {
     title: "Body Treatment (Body Brightening)",
+    slug: "body-brightening",
+    spoiler:
+      "Perawatan ini membantu mencerahkan area ketiak, menghaluskan kulit, dan menyamarkan bekas gelap sehingga tampil lebih cerah dan merata.",
     subtitle: `Perawatan yang diformulasikan khusus untuk mencerahkan dan menghaluskan kulit, terutama pada area ketiak. Treatment ini membantu menyamarkan area yang gelap, melembutkan tekstur kulit, serta mengurangi bekas luka sehingga kulit tampak lebih cerah, halus, dan merata.`,
   },
   {
     title: "Hair Treatment",
+    slug: "hair-treatment",
+    spoiler:
+      "Perawatan Hair Stemcell dan PRP Hair membantu mengatasi kerontokan dengan merangsang pertumbuhan rambut baru, memperkuat akar, dan meningkatkan ketebalan rambut secara alami.",
     subtitle: `## **Hair Stemcell**
 
 Perawatan premium untuk mengatasi kebotakan atau kerontokan rambut (androgenic alopecia) yang berkaitan dengan faktor hormonal. Treatment ini menggunakan serum khusus yang disuntikkan ke kulit kepala untuk merangsang pertumbuhan sel rambut baru, memperkuat akar rambut, serta meningkatkan kepadatan rambut. Prosedurnya dilakukan tanpa downtime sehingga nyaman untuk aktivitas harian.
@@ -728,6 +759,9 @@ Perawatan untuk mengurangi kerontokan dan mendukung pertumbuhan rambut baru deng
   },
   {
     title: "Body Injection",
+    slug: "body-injection",
+    spoiler:
+      "Rangkaian perawatan kesehatan dan pencerahan kulit ini mencakup Whitening Injection, Multivitamin Injection, dan Ozone Therapy yang bekerja bersama untuk meningkatkan imunitas, menjaga energi, mendukung detoksifikasi, dan membuat kulit tampak lebih cerah serta sehat.",
     subtitle: `Serangkaian perawatan yang dirancang untuk memenuhi kebutuhan harian tubuh, mulai dari pencerahan kulit, peningkatan imunitas, hingga detoksifikasi. Rangkaian ini mencakup **Whitening Injection**, **Multivitamin Injection**, dan **Ozone Therapy** yang bekerja saling melengkapi untuk menjaga tubuh tetap sehat, bugar, dan terlihat lebih cerah.
 
 

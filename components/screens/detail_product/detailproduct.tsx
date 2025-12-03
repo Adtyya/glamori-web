@@ -1,10 +1,15 @@
+import { ProductProps } from "@/types/product";
 import Hero from "./section/hero";
 import Treatment from "./section/treatment";
 
-export default function DetailProduct() {
+export type DetailProductProps = {
+  productDetails: ProductProps;
+};
+
+export default function DetailProduct({ productDetails }: DetailProductProps) {
   return (
     <>
-      <Hero />
+      <Hero {...{ productDetails }} />
       <Treatment />
     </>
   );

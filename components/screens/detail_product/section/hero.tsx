@@ -1,8 +1,10 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
+import type { DetailProductProps } from "../detailproduct";
+import Markdown from "react-markdown";
 
-export default function Hero() {
+export default function Hero({ productDetails }: DetailProductProps) {
   return (
     <Container>
       <div className="py-12">
@@ -19,48 +21,11 @@ export default function Hero() {
           </div>
           <div className="col-span-full lg:col-span-2 space-y-3.5">
             <Heading as={1} className="capitalize text-glamorig-500">
-              facial treatment
+              {productDetails.title}
             </Heading>
-            <Paragraph size="lg" className="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sit
-              recusandae incidunt quibusdam deleniti dolorum voluptate explicabo
-              voluptatem corporis cupiditate, laboriosam dignissimos quod enim,
-              aut itaque ipsam ea facilis amet atque iste eveniet eligendi animi
-              doloremque. Illo adipisci vel veniam, non autem facere minima
-              fugit saepe consectetur perferendis et beatae repudiandae dolorum
-              quaerat? Animi optio doloremque nostrum pariatur fuga voluptates,
-              voluptatum officiis. Sapiente iste dignissimos odio quibusdam eum
-              vero ad, aspernatur modi id rerum ullam, quisquam vitae enim
-              molestiae corrupti, odit distinctio. Corporis facilis, error quas
-              magni vitae sint assumenda explicabo ullam eos, repudiandae
-              veritatis. Voluptates pariatur, saepe ut amet id corporis ipsum
-              alias libero fugiat corrupti atque vel reiciendis officiis
-              deserunt placeat porro. Omnis dignissimos accusantium deleniti
-              sint vel similique laudantium recusandae in delectus soluta.
-              Adipisci illum nemo, at neque consequuntur fugit nobis mollitia
-              rem vero optio pariatur eveniet recusandae placeat officiis magnam
-              reiciendis nesciunt, non numquam harum doloremque!
-            </Paragraph>
-            <Paragraph size="lg" className="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sit
-              recusandae incidunt quibusdam deleniti dolorum voluptate explicabo
-              voluptatem corporis cupiditate, laboriosam dignissimos quod enim,
-              aut itaque ipsam ea facilis amet atque iste eveniet eligendi animi
-              doloremque. Illo adipisci vel veniam, non autem facere minima
-              fugit saepe consectetur perferendis et beatae repudiandae dolorum
-              quaerat? Animi optio doloremque nostrum pariatur fuga voluptates,
-              voluptatum officiis. Sapiente iste dignissimos odio quibusdam eum
-              vero ad, aspernatur modi id rerum ullam, quisquam vitae enim
-              molestiae corrupti, odit distinctio. Corporis facilis, error quas
-              magni vitae sint assumenda explicabo ullam eos, repudiandae
-              veritatis. Voluptates pariatur, saepe ut amet id corporis ipsum
-              alias libero fugiat corrupti atque vel reiciendis officiis
-              deserunt placeat porro. Omnis dignissimos accusantium deleniti
-              sint vel similique laudantium recusandae in delectus soluta.
-              Adipisci illum nemo, at neque consequuntur fugit nobis mollitia
-              rem vero optio pariatur eveniet recusandae placeat officiis magnam
-              reiciendis nesciunt, non numquam harum doloremque!
-            </Paragraph>
+            <div className="prose  prose-gray lg:prose-lg max-w-none prose-headings:font-bold prose-a:text-blue-600 prose-img:rounded-lg prose-p:my-1 prose-ul:my-1 prose-li:my-0 prose-h2:mt-3 prose-h2:mb-2 prose-h3:mt-3 prose-h3:mb-1">
+              <Markdown>{productDetails.subtitle}</Markdown>
+            </div>
           </div>
         </div>
       </div>
