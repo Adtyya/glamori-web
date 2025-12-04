@@ -9,11 +9,13 @@ const list_team = [
     name: "dr. Rista Febriana",
     branch: "Lampung",
     image: dokter_rista,
+    cta: "https://wa.me/6289606000101?text=Hallo Admin, Aku mau konsultasi Treatment.",
   },
   {
     name: "dr. Cahyani Putry",
     branch: "Lampung",
     image: dokter_cahyani,
+    cta: "https://wa.me/6289606000101?text=Hallo Admin, Aku mau konsultasi Treatment.",
   },
 ];
 
@@ -42,9 +44,10 @@ type CardProps = {
   image: string;
   name: string;
   branch: string;
+  cta: string;
 };
 
-function Card({ image, name, branch }: CardProps) {
+function Card({ image, name, branch, cta }: CardProps) {
   return (
     <div className="overflow-hidden rounded-t-full drop-shadow-xl">
       {/* IMAGE */}
@@ -69,7 +72,7 @@ function Card({ image, name, branch }: CardProps) {
 
       {/* CTA */}
       <div className="bg-glamorig-500 p-3.5 flex items-center justify-center rounded-b-2xl">
-        <a href="">
+        <a href={cta}>
           <Paragraph size="lg" className="font-semibold !text-white">
             Mulai Konsultasi
           </Paragraph>
