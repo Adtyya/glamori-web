@@ -2,6 +2,7 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
+import InstagramEmbed from "../component/instagram";
 
 export default function FollowInstagram() {
   return (
@@ -29,13 +30,8 @@ export default function FollowInstagram() {
               <Card />
             </div>
 
-            <div className="relative order-3 w-full h-64 overflow-hidden md:h-80 lg:h-full rounded-2xl md:order-2">
-              <Image
-                src="https://placehold.co/600x600.png"
-                alt="test"
-                fill
-                className="object-cover"
-              />
+            <div className="relative order-3 w-full h-full overflow-hidden md:h-80 lg:h-full rounded-2xl md:order-2">
+              <InstagramEmbed url="https://www.instagram.com/reel/DPqJ71Zk-5N/" />
             </div>
 
             <div className="grid grid-cols-2 gap-3.5 order-2 lg:order-3">
