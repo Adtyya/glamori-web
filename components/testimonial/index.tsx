@@ -1,4 +1,5 @@
 import React from "react";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
 export interface TestimonialProps {
   quote: string;
@@ -51,7 +52,13 @@ export const CustomerReview: React.FC<TestimonialProps> = ({
 
   return (
     <div className="overflow-hidden bg-white rounded text-slate-500">
-      <div className="relative p-6">
+      <div className="relative w-full h-full p-6">
+        <div className="absolute w-full h-full left-8 top-8">
+          <BiSolidQuoteAltLeft
+            size={64}
+            className="opacity-20 text-glamorig-500"
+          />
+        </div>
         <figure className="relative z-10">
           <blockquote className="p-6 text-lg leading-relaxed">
             <p className="line-clamp-5">{quote}</p>
