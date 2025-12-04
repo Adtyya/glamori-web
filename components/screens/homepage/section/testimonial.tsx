@@ -2,14 +2,54 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
-import { useState } from "react";
-import type { Swiper as SwiperType } from "swiper";
+import { CustomerReview } from "@/components/testimonial";
+import Marquee from "react-fast-marquee";
+
+const list_review = [
+  {
+    quote:
+      "Tau tempat ini dari rekomen teman, ternyata pas pertama datang, baru masuk pintu aja uda nyaman, ruangan nya wangi dan bersih, pelayanan ramah, treatment pengerjaan nya sangat rapih dan bersih. Memuaskan sekali treatment disini. Bakal balik lg deh kesini. Thank you utk dokter dan perawat nya yang ramah2❤️",
+    authorName: "Queena Ong",
+    authorRole: "Customer",
+    rating: 5,
+  },
+  {
+    quote:
+      "dari masuk uda feel kenyamanan tempatnya, ditambah profesional cara kerjanya. Totaly suka treatment facial di sana, langsung share pengalaman ke teman2.",
+    authorName: "Poppy Wardani",
+    authorRole: "Customer",
+    rating: 5,
+  },
+  {
+    quote:
+      "Klinik paling nyaman, dan bagus. Dari segi pelayanan nya TOP banget🧡 Staff nya ramah”, dan baik. dan utk treatment nya juga bagus, benar” buat muka jadi cerah dan sehat.",
+    authorName: "Yuni Sinurat",
+    authorRole: "Customer",
+    rating: 5,
+  },
+  {
+    quote:
+      "Kliniknya nyaman dan terlihat mewah, untuk para staf nya pun ramah-ramah sekali😍 ga nyesel berlangganan dan perawatan di Glamori Clinic hasilnya sangat memuaskan 🥰",
+    authorName: "Fitri Isnaeni Nurunnisa",
+    authorRole: "Customer",
+    rating: 5,
+  },
+  {
+    quote: `Creamnya bnr" bagus bgt, blm 1 bln pemakaian udah ada perubhn, wajah tmpak lebih cerah n flek memudar, jadi pgn ngaca terus, respon penjual cepat n ramah`,
+    authorName: "Nery Asih",
+    authorRole: "Customer",
+    rating: 5,
+  },
+  {
+    quote:
+      "Tempat treatment paling cozy di Bandar Lampung. Pelayanannya oke banget, suster2 nya ramah semua, dokternya juga baik2 banget dan yg lebih penting selalu nyaranin treatment sesuai kebutuhan kita dan gak over. Paling suka dermahair disini hasilnya paling oke daripada tempat lain krna udah coba semua. Trs Pico lasernya mantap bgt buat yg punya flek sekali treatment lsg kelihatan hasilnya, skinboosternya juga bikin gamon.. aahhh semuanya sukaaa, apalagi kimbapnya yg selalu bikin kangen. Sukses terus Glamori 🤍🤍",
+    authorName: "Venessa Ghea Azhari",
+    authorRole: "Customer",
+    rating: 5,
+  },
+];
 
 export default function Testimonial() {
-  const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
-
   return (
     <Container>
       <div className="py-12">
@@ -27,102 +67,17 @@ export default function Testimonial() {
           </div>
         </div>
         <div className="relative mt-5">
-          <button
-            onClick={() => swiperInstance?.slidePrev()}
-            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -left-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label="Previous slide"
-            disabled={!swiperInstance}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-          </button>
-
-          <button
-            onClick={() => swiperInstance?.slideNext()}
-            className="absolute z-10 items-center justify-center hidden w-12 h-12 text-white transition-colors -translate-y-1/2 rounded-full shadow-lg cursor-pointer -right-20 top-1/2 bg-glamorig-500 lg:flex hover:bg-glamorig-600 disabled:opacity-50 disabled:cursor-not-allowed"
-            aria-label="Next slide"
-            disabled={!swiperInstance}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
-
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            onSwiper={setSwiperInstance}
-            spaceBetween={30}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 25,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-            }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-          >
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide className="py-3.5">
-              <Card />
-            </SwiperSlide>
-          </Swiper>
+          <Marquee>
+            {list_review.map((result) => {
+              return (
+                <div key={result.authorName} className="py-3.5 w-full max-w-lg">
+                  <CustomerReview {...result} />
+                </div>
+              );
+            })}
+          </Marquee>
         </div>
       </div>
     </Container>
-  );
-}
-
-function Card() {
-  return (
-    <div className="relative w-full h-96">
-      <Image
-        src="https://placehold.co/600x600.png"
-        alt="test"
-        fill
-        className="object-cover"
-      />
-    </div>
   );
 }
