@@ -49,7 +49,7 @@ export default function FollowInstagram() {
 
 function Card() {
   return (
-    <div className="relative w-full overflow-hidden h-52 lg:h-72 rounded-2xl">
+    <div className="relative w-full overflow-hidden h-52 lg:h-[23rem] rounded-2xl">
       <Image
         src="https://placehold.co/600x600.png"
         alt="test"
