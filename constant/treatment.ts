@@ -471,7 +471,7 @@ Lemak diambil melalui teknik sedot lemak, diolah, lalu disuntikkan kembali ke ar
   },
   {
     title: "Body Slimming",
-    image: "/assets/images/fat.jpg",
+    image: "/assets/images/body_slimming.jpg",
     slug: "body-slimming",
     spoiler:
       "Program Body Slimming dirancang untuk membantu membentuk tubuh lebih ideal secara aman dan efektif. Pilihannya meliputi Slimming Injection untuk menargetkan lemak membandel, Fat Laser untuk menghancurkan lemak sekaligus mengencangkan kulit, serta Produk Slimming Glamori yang membantu mengontrol nafsu makan, meningkatkan metabolisme, dan mengurangi penyerapan lemak. Semua prosedur dan produk dibuat aman untuk mendukung hasil maksimal.",
@@ -504,7 +504,7 @@ Semua produk telah teruji aman, tidak memiliki efek samping, dan dirancang untuk
   },
   {
     title: "Miss V Series",
-    image: "/assets/images/leg.jpg",
+    image: "/assets/images/miss_v.jpg",
     slug: "miss-v-series",
     spoiler:
       "Perawatan intim wanita dirancang untuk menjaga kebersihan, kesehatan, dan kekencangan area kewanitaan. Layanannya meliputi V-Rejuvenation untuk membersihkan dan meremajakan jaringan, V-FEMILIFT (PRP) untuk meningkatkan tekstur dan sensitivitas, V-Inject untuk mengencangkan jaringan intim, V-Shoot dengan ultrasound non-invasif untuk meningkatkan elastisitas, serta V-Lift dan V-Fill untuk memperbaiki bentuk area intim agar lebih sehat dan proporsional. Semua prosedur diformulasikan aman, nyaman, dan membantu meningkatkan kepercayaan diri.",
@@ -614,7 +614,7 @@ Kelebihannya:
   },
   {
     title: "Bust Treatment",
-    image: "/assets/images/unknown_2.jpg",
+    image: "/assets/images/bust.jpg",
     slug: "bust-treatment",
     spoiler:
       "Rangkaian perawatan payudara di Glamori Clinic dirancang untuk membantu mengencangkan, menambah volume, dan memperbaiki tampilan payudara secara aman. Pilihannya mencakup B-Lift untuk meningkatkan elastisitas dan mengangkat payudara, B-Fill untuk menambah volume dan membentuk lekuk, B-Treatment sebagai opsi non-invasif untuk mengencangkan kulit, serta B-Inject untuk memperkuat otot dada agar payudara tampak lebih terangkat. Setiap prosedur memberikan hasil bertahap hingga instan, dengan durasi ketahanan yang bervariasi sesuai jenis treatment.",
@@ -692,7 +692,7 @@ Perawatan rejuvenasi dengan penyuntikan ke area otot dada untuk merangsang penge
   },
   {
     title: "Eyes Treatment",
-    image: "/assets/images/unknown_2.jpg",
+    image: "/assets/images/eye.jpg",
     slug: "eyes-treatment",
     spoiler:
       "Perawatan area mata kini makin diminati karena mampu mengatasi kantung mata, lingkaran hitam, kekenduran, hingga bentuk kelopak yang kurang tegas. Melalui Eye Booster, Eyebag Fat Removal, dan Korean Double Eyelid, Anda bisa mendapatkan tampilan mata yang lebih segar, kencang, dan proporsional tanpa prosedur yang rumit.",
@@ -719,7 +719,7 @@ Prosedur kelopak mata yang bertujuan memberikan lipatan mata (â€œdouble eyelidâ€
   },
   {
     title: "Lips Treatment",
-    image: "/assets/images/unknown_2.jpg",
+    image: "/assets/images/lips.jpg",
     slug: "lips-treatment",
     spoiler:
       "Perawatan bibir seperti Lips Booster, Cherry Lips, dan Lips Filler membantu membuat bibir lebih lembap, merona alami, serta lebih penuh dan proporsional dengan hasil yang tetap natural.",
@@ -744,7 +744,7 @@ Perawatan untuk membentuk ulang kontur bibir, menambah volume, serta mengembalik
   },
   {
     title: "Body Treatment (Body Brightening)",
-    image: "/assets/images/unknown_2.jpg",
+    image: "/assets/images/leg.jpg",
     slug: "body-brightening",
     spoiler:
       "Perawatan ini membantu mencerahkan area ketiak, menghaluskan kulit, dan menyamarkan bekas gelap sehingga tampil lebih cerah dan merata.",
@@ -770,7 +770,7 @@ Perawatan untuk mengurangi kerontokan dan mendukung pertumbuhan rambut baru deng
   },
   {
     title: "Body Injection",
-    image: "/assets/images/fat.jpg",
+    image: "/assets/images/body_injection.jpg",
     slug: "body-injection",
     spoiler:
       "Rangkaian perawatan kesehatan dan pencerahan kulit ini mencakup Whitening Injection, Multivitamin Injection, dan Ozone Therapy yang bekerja bersama untuk meningkatkan imunitas, menjaga energi, mendukung detoksifikasi, dan membuat kulit tampak lebih cerah serta sehat.",
