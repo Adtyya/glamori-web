@@ -120,9 +120,10 @@ type CardProps = {
   title: string;
   spoiler?: string;
   slug: string;
+  image: string;
 };
 
-function Card({ title, spoiler, slug }: CardProps) {
+function Card({ title, spoiler, slug, image }: CardProps) {
   return (
     <div className="w-full border-2 border-glamorig-500 rounded-2xl overflow-hidden hover:-translate-y-3.5 hover:drop-shadow-md duration-300">
       <div className="px-1.5 py-5 border-b-2 border-glamorig-500 text-center">
@@ -131,12 +132,7 @@ function Card({ title, spoiler, slug }: CardProps) {
         </Paragraph>
       </div>
       <div className="relative w-full h-96">
-        <Image
-          src="https://placehold.co/600x600.png"
-          alt="test"
-          fill
-          className="object-cover"
-        />
+        <Image src={image} alt={title} fill className="object-cover" />
       </div>
       <div className="p-2.5">
         <Paragraph className="font-medium text-justify line-clamp-3">

@@ -6,6 +6,7 @@ import { Card } from "../../blog/component/blog_card";
 import EmptyBlog from "../../blog/component/empty";
 import Spinner from "@/components/spinner";
 import Button from "@/components/button";
+import Link from "next/link";
 
 export default function LatestBlog() {
   const { articles, loading, error } = useArticles(3);
@@ -45,7 +46,9 @@ export default function LatestBlog() {
                 ))}
               </div>
               <div className="flex items-center justify-center mt-3.5">
-                <Button>Lihat Selengkapnya</Button>
+                <Link href="/blog" prefetch>
+                  <Button>Lihat Selengkapnya</Button>
+                </Link>
               </div>
             </>
           )}
