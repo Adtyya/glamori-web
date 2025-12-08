@@ -1,8 +1,7 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
-import { glamori_team_sample } from "@/constant/image";
 import Image from "next/image";
-import { dokter_cahyani, dokter_rista } from "@/constant/image";
+import { dokter_cahyani, dokter_rista, dokter_nabila } from "@/constant/image";
 
 const list_team = [
   {
@@ -16,6 +15,12 @@ const list_team = [
     branch: "Lampung",
     image: dokter_cahyani,
     cta: "https://wa.me/6289606000101?text=Hallo Admin, Aku mau konsultasi Treatment.",
+  },
+  {
+    name: "dr. Nabila Chintia Putri",
+    branch: "Jakarta",
+    image: dokter_nabila,
+    cta: "https://wa.me/6285270010701?text=Hallo Admin, Aku mau konsultasi Treatment.",
   },
 ];
 

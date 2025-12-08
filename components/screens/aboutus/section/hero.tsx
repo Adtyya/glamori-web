@@ -1,7 +1,7 @@
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
-import { glamori_logo_big } from "@/constant/image";
+import { glamori_team } from "@/constant/image";
 
 export default function Hero() {
   return (
@@ -9,12 +9,12 @@ export default function Hero() {
       <div className="py-12">
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
           <div className="flex items-center col-span-full lg:col-span-1">
-            <div className="relative w-full overflow-hidden aspect-square rounded-2xl">
+            <div className="relative w-full overflow-hidden border border-gray-200 rounded-lg shadow-md aspect-square">
               <Image
-                src={glamori_logo_big}
+                src={glamori_team}
                 alt="glamori_logo"
                 fill
-                className="object-contain scale-75"
+                className="object-cover"
               />
             </div>
           </div>
