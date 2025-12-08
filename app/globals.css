@@ -11,3 +11,20 @@ html,
 body {
   font-family: var(--font-satoshi);
 }
+
+.custom-swiper .swiper-pagination-bullet {
+  @apply bg-slate-300;
+  opacity: 0.6;
+}
+
+/* Bullet aktif */
+.custom-swiper .swiper-pagination-bullet-active {
+  @apply bg-glamorig-500;
+  opacity: 1;
+}
+
+.custom-swiper .swiper-pagination {
+  bottom: 0 !important;
+  position: relative !important;
+  margin-top: 10px;
+}

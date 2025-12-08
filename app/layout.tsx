@@ -1,5 +1,6 @@
 import "./globals.css";
 import "swiper/css";
+import "swiper/css/pagination";
 import { Footer, NavigationBar } from "@/components/layout";
 import NextTopLoader from "nextjs-toploader";
 import { Metadata } from "next";

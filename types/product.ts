@@ -4,4 +4,9 @@ export type ProductProps = {
   subtitle: string;
   image?: string;
   spoiler: string;
+  beforeAfter: BeforeAfterProps[];
+};
+
+type BeforeAfterProps = {
+  image: string;
 };
