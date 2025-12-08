@@ -78,11 +78,11 @@ export const menu_list_navbar = [
     path: "/tentang-glamori",
   },
   {
-    name: "Hubungi Kami",
-    path: "/hubungi-kami",
-  },
-  {
     name: "Blog",
     path: "/blog",
+  },
+  {
+    name: "Hubungi Kami",
+    path: "/hubungi-kami",
   },
 ];
