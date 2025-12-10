@@ -51,7 +51,7 @@ export const CustomerReview: React.FC<TestimonialProps> = ({
   );
 
   return (
-    <div className="overflow-hidden bg-white rounded text-slate-500">
+    <div className="mx-2 overflow-hidden bg-white border-2 lg:mx-5 rounded-xl text-slate-500 border-glamorig-500">
       <div className="relative w-full h-full p-6">
         <div className="absolute w-full h-full left-8 top-8">
           <BiSolidQuoteAltLeft
@@ -61,7 +61,7 @@ export const CustomerReview: React.FC<TestimonialProps> = ({
         </div>
         <figure className="relative z-10">
           <blockquote className="p-6 text-lg leading-relaxed">
-            <p className="line-clamp-5">{quote}</p>
+            <p className="">{quote}</p>
           </blockquote>
           <figcaption className="flex flex-col items-start gap-2 p-6 pt-0 text-sm text-glamorig-500">
             <span

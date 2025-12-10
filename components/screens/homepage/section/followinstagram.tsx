@@ -3,6 +3,12 @@ import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
 import Image from "next/image";
 import InstagramEmbed from "../component/instagram";
+import {
+  glamori_overview_1,
+  glamori_overview_2,
+  glamori_overview_3,
+  glamori_overview_4,
+} from "@/constant/image";
 
 export default function FollowInstagram() {
   return (
@@ -23,22 +29,18 @@ export default function FollowInstagram() {
         </div>
         <div className="relative mt-5">
           <div className="grid gap-3.5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <div className="grid grid-cols-2 gap-3.5 order-1 lg:order-1">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+            <div className="grid grid-cols-1 gap-3.5 order-1 lg:order-1">
+              <Card image={glamori_overview_1} />
+              <Card image={glamori_overview_2} />
             </div>
 
             <div className="relative order-3 w-full h-full overflow-hidden md:h-80 lg:h-full rounded-2xl md:order-2">
               <InstagramEmbed url="https://www.instagram.com/reel/DPqJ71Zk-5N/" />
             </div>
 
-            <div className="grid grid-cols-2 gap-3.5 order-2 lg:order-3">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+            <div className="grid grid-cols-1 gap-3.5 order-2 lg:order-3">
+              <Card image={glamori_overview_3} />
+              <Card image={glamori_overview_4} />
             </div>
           </div>
         </div>
@@ -47,15 +49,10 @@ export default function FollowInstagram() {
   );
 }
 
-function Card() {
+function Card({ image }: { image: string }) {
   return (
     <div className="relative w-full overflow-hidden h-52 lg:h-[23rem] rounded-2xl">
-      <Image
-        src="https://placehold.co/600x600.png"
-        alt="test"
-        fill
-        className="object-cover"
-      />
+      <Image src={image} alt="test" fill className="object-cover" />
     </div>
   );
 }
