@@ -1,3 +1,4 @@
+import Faq from "@/components/global/faq";
 import Banner from "./section/banner";
 import FollowInstagram from "./section/followinstagram";
 import LatestBlog from "./section/latestblog";
@@ -13,6 +14,7 @@ export default function HomePageScreen() {
       <Testimonial />
       <LatestBlog />
       <FollowInstagram />
+      <Faq />
       <Subscribe />
     </>
   );

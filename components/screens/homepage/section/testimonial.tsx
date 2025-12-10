@@ -1,7 +1,7 @@
 "use client";
+
 import { Container } from "@/components/layout";
 import { Heading, Paragraph } from "@/components/text";
-import Image from "next/image";
 import { CustomerReview } from "@/components/testimonial";
 import Marquee from "react-fast-marquee";
 
@@ -66,8 +66,19 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
-        <div className="relative mt-5">
-          <Marquee>
+        <div className="relative hidden mt-5 lg:block">
+          <Marquee pauseOnClick>
+            {list_review.map((result) => {
+              return (
+                <div key={result.authorName} className="py-3.5 w-full max-w-lg">
+                  <CustomerReview {...result} />
+                </div>
+              );
+            })}
+          </Marquee>
+        </div>
+        <div className="relative block mt-5 lg:hidden">
+          <Marquee pauseOnHover>
             {list_review.map((result) => {
               return (
                 <div key={result.authorName} className="py-3.5 w-full max-w-lg">

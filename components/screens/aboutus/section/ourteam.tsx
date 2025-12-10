@@ -5,6 +5,12 @@ import { dokter_cahyani, dokter_rista, dokter_nabila } from "@/constant/image";
 
 const list_team = [
   {
+    name: "dr. Nabila Chintia Putri",
+    branch: "Jakarta",
+    image: dokter_nabila,
+    cta: "https://wa.me/6285270010701?text=Hallo Admin, Aku mau konsultasi Treatment.",
+  },
+  {
     name: "dr. Rista Febriana",
     branch: "Lampung",
     image: dokter_rista,
@@ -15,12 +21,6 @@ const list_team = [
     branch: "Lampung",
     image: dokter_cahyani,
     cta: "https://wa.me/6289606000101?text=Hallo Admin, Aku mau konsultasi Treatment.",
-  },
-  {
-    name: "dr. Nabila Chintia Putri",
-    branch: "Jakarta",
-    image: dokter_nabila,
-    cta: "https://wa.me/6285270010701?text=Hallo Admin, Aku mau konsultasi Treatment.",
   },
 ];
 
@@ -54,7 +54,7 @@ type CardProps = {
 
 function Card({ image, name, branch, cta }: CardProps) {
   return (
-    <div className="overflow-hidden rounded-t-full drop-shadow-xl">
+    <div className="overflow-hidden rounded-xl drop-shadow-xl">
       {/* IMAGE */}
       <div
         className="relative w-full h-96"
@@ -76,7 +76,7 @@ function Card({ image, name, branch, cta }: CardProps) {
       </div>
 
       {/* CTA */}
-      <div className="bg-glamorig-500 p-3.5 flex items-center justify-center rounded-b-2xl">
+      <div className="bg-glamorig-500 p-3.5 flex items-center justify-center">
         <a href={cta}>
           <Paragraph size="lg" className="font-semibold !text-white">
             Mulai Konsultasi
