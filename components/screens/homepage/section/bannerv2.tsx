@@ -5,8 +5,12 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
 
 const banner_list = [
-  { path: "/assets/images/banner/slide_1.jpg" },
-  { path: "/assets/images/banner/slide_2.jpg" },
+  {
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765429065/slide_1_uu3qu8.jpg",
+  },
+  {
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765429072/slide_2_n1meds.jpg",
+  },
 ];
 
 export default function BannerV2() {
@@ -17,7 +21,7 @@ export default function BannerV2() {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         loop
