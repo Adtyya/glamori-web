@@ -10,41 +10,41 @@ const list_review = [
     quote:
       "Tau tempat ini dari rekomen teman, ternyata pas pertama datang, baru masuk pintu aja uda nyaman, ruangan nya wangi dan bersih, pelayanan ramah, treatment pengerjaan nya sangat rapih dan bersih. Memuaskan sekali treatment disini. Bakal balik lg deh kesini. Thank you utk dokter dan perawat nya yang ramah2❤️",
     authorName: "Queena Ong",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
   {
     quote:
       "dari masuk uda feel kenyamanan tempatnya, ditambah profesional cara kerjanya. Totaly suka treatment facial di sana, langsung share pengalaman ke teman2.",
     authorName: "Poppy Wardani",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
   {
     quote:
       "Klinik paling nyaman, dan bagus. Dari segi pelayanan nya TOP banget🧡 Staff nya ramah”, dan baik. dan utk treatment nya juga bagus, benar” buat muka jadi cerah dan sehat.",
     authorName: "Yuni Sinurat",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
   {
     quote:
       "Kliniknya nyaman dan terlihat mewah, untuk para staf nya pun ramah-ramah sekali😍 ga nyesel berlangganan dan perawatan di Glamori Clinic hasilnya sangat memuaskan 🥰",
     authorName: "Fitri Isnaeni Nurunnisa",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
   {
     quote: `Creamnya bnr" bagus bgt, blm 1 bln pemakaian udah ada perubhn, wajah tmpak lebih cerah n flek memudar, jadi pgn ngaca terus, respon penjual cepat n ramah`,
     authorName: "Nery Asih",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
   {
     quote:
       "Tempat treatment paling cozy di Bandar Lampung. Pelayanannya oke banget, suster2 nya ramah semua, dokternya juga baik2 banget dan yg lebih penting selalu nyaranin treatment sesuai kebutuhan kita dan gak over. Paling suka dermahair disini hasilnya paling oke daripada tempat lain krna udah coba semua. Trs Pico lasernya mantap bgt buat yg punya flek sekali treatment lsg kelihatan hasilnya, skinboosternya juga bikin gamon.. aahhh semuanya sukaaa, apalagi kimbapnya yg selalu bikin kangen. Sukses terus Glamori 🤍🤍",
     authorName: "Venessa Ghea Azhari",
-    authorRole: "Customer",
+    authorRole: "Customer Glamori",
     rating: 5,
   },
 ];

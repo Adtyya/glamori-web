@@ -507,11 +507,7 @@ Lemak diambil melalui teknik sedot lemak, diolah, lalu disuntikkan kembali ke ar
   {
     title: "Body Slimming",
     image: "/assets/images/body_slimming.jpg",
-    beforeAfter: [
-      {
-        image: "https://placehold.co/600x600.png",
-      },
-    ],
+    beforeAfter: [],
     slug: "body-slimming",
     spoiler:
       "Program Body Slimming dirancang untuk membantu membentuk tubuh lebih ideal secara aman dan efektif. Pilihannya meliputi Slimming Injection untuk menargetkan lemak membandel, Fat Laser untuk menghancurkan lemak sekaligus mengencangkan kulit, serta Produk Slimming Glamori yang membantu mengontrol nafsu makan, meningkatkan metabolisme, dan mengurangi penyerapan lemak. Semua prosedur dan produk dibuat aman untuk mendukung hasil maksimal.",
@@ -545,11 +541,7 @@ Semua produk telah teruji aman, tidak memiliki efek samping, dan dirancang untuk
   {
     title: "Miss V Series",
     image: "/assets/images/miss_v.jpg",
-    beforeAfter: [
-      {
-        image: "https://placehold.co/600x600.png",
-      },
-    ],
+    beforeAfter: [],
     slug: "miss-v-series",
     spoiler:
       "Perawatan intim wanita dirancang untuk menjaga kebersihan, kesehatan, dan kekencangan area kewanitaan. Layanannya meliputi V-Rejuvenation untuk membersihkan dan meremajakan jaringan, V-FEMILIFT (PRP) untuk meningkatkan tekstur dan sensitivitas, V-Inject untuk mengencangkan jaringan intim, V-Shoot dengan ultrasound non-invasif untuk meningkatkan elastisitas, serta V-Lift dan V-Fill untuk memperbaiki bentuk area intim agar lebih sehat dan proporsional. Semua prosedur diformulasikan aman, nyaman, dan membantu meningkatkan kepercayaan diri.",
@@ -827,11 +819,7 @@ Perawatan untuk membentuk ulang kontur bibir, menambah volume, serta mengembalik
   {
     title: "Hair Treatment",
     image: "/assets/images/hair.jpg",
-    beforeAfter: [
-      {
-        image: "https://placehold.co/600x600.png",
-      },
-    ],
+    beforeAfter: [],
     slug: "hair-treatment",
     spoiler:
       "Perawatan Hair Stemcell dan PRP Hair membantu mengatasi kerontokan dengan merangsang pertumbuhan rambut baru, memperkuat akar, dan meningkatkan ketebalan rambut secara alami.",

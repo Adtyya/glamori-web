@@ -127,10 +127,20 @@ export default function Footer() {
 
             {/* Bottom Section */}
             <div className="flex flex-col gap-4 pt-5 mt-10 border-t border-white/30 lg:flex-row lg:items-center lg:justify-between">
-              <Paragraph className="font-semibold text-left">
-                &copy; {new Date().getFullYear()} Glamori Clinic. All Rights
-                Reserved
-              </Paragraph>
+              <div className="flex gap-3.5 items-center">
+                <Paragraph className="font-semibold text-left" size="sm">
+                  &copy; {new Date().getFullYear()} Glamori Clinic. All Rights
+                  Reserved
+                </Paragraph>
+                <a href="https://evetechsolution.com/id" target="_blank">
+                  <Paragraph
+                    className="font-semibold hover:underline"
+                    size="sm"
+                  >
+                    Powered by Evetech Solution v1.00
+                  </Paragraph>
+                </a>
+              </div>
 
               <div className="flex items-center justify-start gap-3.5">
                 <Link href="#">

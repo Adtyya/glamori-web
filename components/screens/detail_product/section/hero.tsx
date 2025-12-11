@@ -13,31 +13,33 @@ export default function Hero({ productDetails }: DetailProductProps) {
     <Container>
       <div className="py-12">
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
-          <div className="col-span-full lg:col-span-1">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              pagination={{ clickable: true }}
-              autoplay={{
-                delay: 3000,
-              }}
-              className="custom-swiper"
-            >
-              {productDetails.beforeAfter.map((path, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <div className="relative w-full overflow-hidden aspect-square rounded-2xl">
-                      <Image
-                        src={path.image}
-                        alt={productDetails.title}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
+          {productDetails.beforeAfter.length > 0 ? (
+            <div className="h-[28rem] col-span-full lg:col-span-1">
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                pagination={{ clickable: true }}
+                autoplay={{
+                  delay: 3000,
+                }}
+                className="w-full h-full custom-swiper"
+              >
+                {productDetails.beforeAfter.map((path, index) => {
+                  return (
+                    <SwiperSlide key={index}>
+                      <div className="relative w-full h-full overflow-hidden aspect-square rounded-2xl">
+                        <Image
+                          src={path.image}
+                          alt={productDetails.title}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </div>
+          ) : null}
           <div className="col-span-full lg:col-span-2 space-y-3.5">
             <Heading as={1} className="capitalize text-glamorig-500">
               {productDetails.title}
