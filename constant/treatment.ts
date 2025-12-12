@@ -378,6 +378,9 @@ Perawatan khusus untuk menangani masalah pembuluh darah seperti spider veins, te
       {
         image: "/assets/images/beforeafter/face_c_5.jpeg",
       },
+      {
+        image: "/assets/images/beforeafter/bust_1.jpg",
+      },
     ],
     slug: "face-contouring",
     spoiler: `Serangkaian treatment face contouring untuk membentuk dan menyeimbangkan fitur wajah—mulai dari mengencangkan kulit, merampingkan pipi, memperbaiki struktur hidung dan dagu, hingga meremajakan area mata. Pilihannya mencakup ThreadLift, Botox, Filler, Buccal Fat Removal, Eyebag Fat Removal, Korean Double Eyelid, Ultralift (HIFU), dan Lippo Modeling.
@@ -652,14 +655,7 @@ Kelebihannya:
   {
     title: "Bust Treatment",
     image: "/assets/images/bust.jpg",
-    beforeAfter: [
-      {
-        image: "/assets/images/beforeafter/bust_1.jpg",
-      },
-      {
-        image: "/assets/images/beforeafter/bust_2.jpeg",
-      },
-    ],
+    beforeAfter: [],
     slug: "bust-treatment",
     spoiler:
       "Rangkaian perawatan payudara di Glamori Clinic dirancang untuk membantu mengencangkan, menambah volume, dan memperbaiki tampilan payudara secara aman. Pilihannya mencakup B-Lift untuk meningkatkan elastisitas dan mengangkat payudara, B-Fill untuk menambah volume dan membentuk lekuk, B-Treatment sebagai opsi non-invasif untuk mengencangkan kulit, serta B-Inject untuk memperkuat otot dada agar payudara tampak lebih terangkat. Setiap prosedur memberikan hasil bertahap hingga instan, dengan durasi ketahanan yang bervariasi sesuai jenis treatment.",
@@ -845,7 +841,7 @@ Perawatan untuk mengurangi kerontokan dan mendukung pertumbuhan rambut baru deng
     ],
     slug: "body-injection",
     spoiler:
-      "Rangkaian perawatan kesehatan dan pencerahan kulit ini mencakup Whitening Injection, Multivitamin Injection, dan Ozone Therapy yang bekerja bersama untuk meningkatkan imunitas, menjaga energi, mendukung detoksifikasi, dan membuat kulit tampak lebih cerah serta sehat.",
+      "NAD+ Therapy Infusion (Nicotinamide Adenine Dinucleotide) adalah suatu bahan terapi grade premium yang berguna untuk meningkatkan proses metabolisme, sistem imun, merangsang mekanisme perbaikan DNA pada tubuh, serta meningkatkan kesehatan pada kulit. Rangkaian perawatan kesehatan dan pencerahan kulit ini mencakup Whitening Injection, Multivitamin Injection, dan Ozone Therapy yang bekerja bersama untuk meningkatkan imunitas, menjaga energi, mendukung detoksifikasi, dan membuat kulit tampak lebih cerah serta sehat.",
     subtitle: `Serangkaian perawatan yang dirancang untuk memenuhi kebutuhan harian tubuh, mulai dari pencerahan kulit, peningkatan imunitas, hingga detoksifikasi. Rangkaian ini mencakup **Whitening Injection**, **Multivitamin Injection**, dan **Ozone Therapy** yang bekerja saling melengkapi untuk menjaga tubuh tetap sehat, bugar, dan terlihat lebih cerah.
 
 

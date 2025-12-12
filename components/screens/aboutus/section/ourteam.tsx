@@ -35,8 +35,10 @@ export default function OurTeam() {
         </div>
         <div className="w-full max-w-5xl mx-auto mt-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-            {list_team.map((team) => {
-              return <Card key={team.name} {...team} />;
+            {list_team.map((team, index) => {
+              return (
+                <Card key={team.name} numberPosition={index + 1} {...team} />
+              );
             })}
           </div>
         </div>
@@ -50,20 +52,28 @@ type CardProps = {
   name: string;
   branch: string;
   cta: string;
+  numberPosition?: number;
 };
 
-function Card({ image, name, branch, cta }: CardProps) {
+function Card({ image, name, branch, cta, numberPosition }: CardProps) {
+  const scaling = numberPosition !== 1 ? "scale-[1.4]" : "";
+
   return (
     <div className="overflow-hidden rounded-xl drop-shadow-xl">
       {/* IMAGE */}
       <div
-        className="relative w-full h-96"
+        className="relative w-full overflow-hidden h-96"
         style={{
           background:
             "linear-gradient(180.24deg, #FFFFFF 12.52%, #FCEBA0 81.03%, #EEC74B 99.82%)",
         }}
       >
-        <Image src={image} alt="sample" fill className="object-cover" />
+        <Image
+          src={image}
+          alt="sample"
+          fill
+          className={`object-cover ${scaling}`}
+        />
       </div>
 
       <div className="bg-glamorig-100 px-4 py-2 flex flex-col items-center justify-center gap-0.5">

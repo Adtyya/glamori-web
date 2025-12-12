@@ -1,4 +1,4 @@
-export const glamori_logo_navbar = "/assets/logo/glamori_logo_navbar.png";
+export const glamori_logo_navbar = "/assets/logo/glamori_logo_navbar.svg";
 export const glamori_banner_homepage = "/assets/images/banner_homepage.jpg";
 export const glamori_team_sample = "/assets/images/sample_team.png";
 export const glamori_white_square = "/assets/images/glamori_white_square.png";
@@ -13,5 +13,5 @@ export const glamori_jakarta_branch =
   "/assets/images/branch/glamori_jakarta.jpg";
 export const glamori_overview_1 = "/assets/images/overview/1-min.jpg";
 export const glamori_overview_2 = "/assets/images/overview/2-min.jpg";
-export const glamori_overview_3 = "/assets/images/overview/3-min.jpg";
+export const glamori_overview_3 = "/assets/images/overview/image.jpg";
 export const glamori_overview_4 = "/assets/images/overview/4-min.jpg";

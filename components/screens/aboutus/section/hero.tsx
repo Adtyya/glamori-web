@@ -23,7 +23,7 @@ export default function Hero() {
               clinic story
             </Heading>
             <Paragraph size="lg" className="text-justify">
-              Selamat datang di Glamori, klinik kecantikan modern dengan Norma 1
+              Selamat datang di Glamori, klinik kecantikan modern dengan Nomer 1
               Derma V Laser yang hadir di Sumatera dan Jakarta sebagai solusi
               lengkap untuk perawatan kulit dan kecantikan Anda. Kami percaya
               bahwa setiap orang berhak merasakan kulit sehat, tampak muda, dan

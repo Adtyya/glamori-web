@@ -30,8 +30,8 @@ export default function Navbar() {
             >
               <Image
                 src={glamori_logo_navbar}
-                width={100}
-                height={50}
+                width={150}
+                height={100}
                 alt="glamori_logo"
                 quality={100}
               />

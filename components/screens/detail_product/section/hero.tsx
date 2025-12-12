@@ -21,7 +21,7 @@ export default function Hero({ productDetails }: DetailProductProps) {
                 autoplay={{
                   delay: 3000,
                 }}
-                className="w-full h-full custom-swiper"
+                className="custom-swiper"
               >
                 {productDetails.beforeAfter.map((path, index) => {
                   return (
