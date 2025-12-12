@@ -35,7 +35,17 @@ export default function FollowInstagram() {
             </div>
 
             <div className="relative order-3 w-full h-full overflow-hidden md:h-80 lg:h-full rounded-2xl md:order-2">
-              <InstagramEmbed url="https://www.instagram.com/reel/DPqJ71Zk-5N/" />
+              <video
+                src={
+                  "https://res.cloudinary.com/dmz19yaoz/video/upload/v1765533309/SnapInsta.to_AQOSWEvODwL0UuQ5nTG0p6-JgSCsIOOxUFOrKwHR0AvyREEszHmWRDThZO7CBuGUA6rzjjn5FqOKmTTPKTolog-jAG7xBge9YlCfpuI_yk2pqz.mp4"
+                }
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="object-cover w-full h-full"
+              />
             </div>
 
             <div className="grid grid-cols-1 gap-3.5 order-2 lg:order-3">

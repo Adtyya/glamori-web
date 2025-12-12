@@ -61,7 +61,7 @@ export const CustomerReview: React.FC<TestimonialProps> = ({
         </div>
         <figure className="relative z-10">
           <blockquote className="p-6 text-lg leading-relaxed">
-            <p className="">{quote}</p>
+            <p className="line-clamp-5">{quote}</p>
           </blockquote>
           <figcaption className="flex flex-col items-start gap-2 p-6 pt-0 text-sm text-glamorig-500">
             <span

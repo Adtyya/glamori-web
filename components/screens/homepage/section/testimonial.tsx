@@ -8,8 +8,8 @@ import Marquee from "react-fast-marquee";
 const list_review = [
   {
     quote:
-      "Tau tempat ini dari rekomen teman, ternyata pas pertama datang, baru masuk pintu aja uda nyaman, ruangan nya wangi dan bersih, pelayanan ramah, treatment pengerjaan nya sangat rapih dan bersih. Memuaskan sekali treatment disini. Bakal balik lg deh kesini. Thank you utk dokter dan perawat nya yang ramah2❤️",
-    authorName: "Queena Ong",
+      "Selalu glamori walaupun harus kelampung dulu, sekarang makin happy glamori buka dijkt jd gak perlu nunggu ke lampung bisa sana sini 🫶🏻🫶🏻 n dokter susternya ramah bgt playanannnya baik sekali.",
+    authorName: "Naira Jihan",
     authorRole: "Customer Glamori",
     rating: 5,
   },
@@ -42,8 +42,8 @@ const list_review = [
   },
   {
     quote:
-      "Tempat treatment paling cozy di Bandar Lampung. Pelayanannya oke banget, suster2 nya ramah semua, dokternya juga baik2 banget dan yg lebih penting selalu nyaranin treatment sesuai kebutuhan kita dan gak over. Paling suka dermahair disini hasilnya paling oke daripada tempat lain krna udah coba semua. Trs Pico lasernya mantap bgt buat yg punya flek sekali treatment lsg kelihatan hasilnya, skinboosternya juga bikin gamon.. aahhh semuanya sukaaa, apalagi kimbapnya yg selalu bikin kangen. Sukses terus Glamori 🤍🤍",
-    authorName: "Venessa Ghea Azhari",
+      "BAGUS BANGET RECOMEND, BUAT YANG MAU COBA SELAIN TEMPAT DAN PELANANYA BAGUS TREATMENT NYA JUGA OK BANGET THANKYOU 😍",
+    authorName: "Nita Nita",
     authorRole: "Customer Glamori",
     rating: 5,
   },
