@@ -74,11 +74,11 @@ export default function BannerV2() {
               <div className="bg-black/40 p-3.5 rounded-xl space-y-5">
                 <Heading
                   as={1}
-                  className="w-full max-w-3xl uppercase text-glamorig-200"
+                  className="w-full max-w-xl uppercase text-glamorig-200"
                 >
                   Timeless beauty, perfected with glamori
                 </Heading>
-                <Paragraph size="xl" className="w-full max-w-3xl text-white">
+                <Paragraph size="xl" className="w-full max-w-xl text-white">
                   Setiap perawatan dirancang untuk menyempurnakan kecantikan
                   alami kulit Anda.
                 </Paragraph>
