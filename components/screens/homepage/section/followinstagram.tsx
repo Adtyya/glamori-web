@@ -36,9 +36,10 @@ export default function FollowInstagram() {
 
             <div className="relative order-3 w-full h-full overflow-hidden md:h-80 lg:h-full rounded-2xl md:order-2">
               <video
-                src={
-                  "https://res.cloudinary.com/dmz19yaoz/video/upload/v1765533309/SnapInsta.to_AQOSWEvODwL0UuQ5nTG0p6-JgSCsIOOxUFOrKwHR0AvyREEszHmWRDThZO7CBuGUA6rzjjn5FqOKmTTPKTolog-jAG7xBge9YlCfpuI_yk2pqz.mp4"
-                }
+                // src={
+                //   "https://res.cloudinary.com/dmz19yaoz/video/upload/v1765533309/SnapInsta.to_AQOSWEvODwL0UuQ5nTG0p6-JgSCsIOOxUFOrKwHR0AvyREEszHmWRDThZO7CBuGUA6rzjjn5FqOKmTTPKTolog-jAG7xBge9YlCfpuI_yk2pqz.mp4"
+                // }
+                src="https://www.dropbox.com/scl/fi/87lv5z4hdnuxr644ptzfk/glamori-testimoni.mp4?rlkey=cjlnx4lq8awijlupwn68x70lh&st=zsgwbdqj&dl=0&raw=1"
                 autoPlay
                 muted
                 loop
