@@ -63,7 +63,7 @@ export default function FollowInstagram() {
 function Card({ image }: { image: string }) {
   return (
     <div className="relative w-full overflow-hidden h-52 lg:h-[23rem] rounded-2xl">
-      <Image src={image} alt="test" fill className="object-cover" />
+      <Image src={image} alt="test" fill className="object-cover" loading="lazy" />
     </div>
   );
 }

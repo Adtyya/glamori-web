@@ -45,6 +45,7 @@ export default function Maps() {
                 src={glamori_jakarta_branch}
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -89,6 +90,7 @@ export default function Maps() {
                 src={glamori_lampung_branch}
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
