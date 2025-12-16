@@ -12,8 +12,8 @@ export default function HomePageScreen() {
     <>
       {/* <Banner /> */}
       <BannerV2 />
-      <FollowInstagram />
       <Treatment />
+      <FollowInstagram />
       <Testimonial />
       <LatestBlog />
       <Faq />
