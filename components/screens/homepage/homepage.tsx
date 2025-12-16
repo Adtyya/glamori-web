@@ -12,10 +12,10 @@ export default function HomePageScreen() {
     <>
       {/* <Banner /> */}
       <BannerV2 />
+      <FollowInstagram />
       <Treatment />
       <Testimonial />
       <LatestBlog />
-      <FollowInstagram />
       <Faq />
       <Subscribe />
     </>
