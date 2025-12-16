@@ -81,7 +81,7 @@ function Card({ title, spoiler, slug, image }: CardProps) {
         </Paragraph>
       </div>
       <div className="relative w-full h-96">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image src={image} alt={title} fill className="object-cover" loading="lazy" />
       </div>
       <div className="p-2.5">
         <Paragraph className="font-medium text-justify line-clamp-3">

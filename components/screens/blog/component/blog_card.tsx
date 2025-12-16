@@ -17,6 +17,7 @@ function FeaturedCard(props: ArticleProps) {
             fill
             className="object-cover"
             quality={100}
+            loading="lazy"
           />
         </div>
 
@@ -77,6 +78,7 @@ function Card({
             alt={props.title}
             fill
             className="object-cover"
+            loading="lazy"
           />
         </div>
 
