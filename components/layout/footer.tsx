@@ -70,6 +70,7 @@ export default function Footer() {
                   alt="glamori_logo"
                   quality={100}
                   className="w-auto h-auto"
+                  loading="lazy"
                 />
               </Link>
             </div>

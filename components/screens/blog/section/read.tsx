@@ -83,6 +83,7 @@ export default function ReadBlog({ articleDetails }: ReadBlogProps) {
                 className="object-cover"
                 priority
                 quality={100}
+                loading="lazy"
               />
             </div>
           </header>

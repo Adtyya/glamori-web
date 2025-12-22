@@ -63,6 +63,7 @@ export default function BannerV2() {
               quality={100}
               sizes="100vw"
               className="object-cover object-center opacity-90"
+              loading="lazy"
             />
           </SwiperSlide>
         ))}

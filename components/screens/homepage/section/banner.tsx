@@ -15,6 +15,7 @@ export default function Banner() {
         fill
         className="object-cover"
         priority
+        loading="lazy"
       />
 
       {/* Overlay konten */}
