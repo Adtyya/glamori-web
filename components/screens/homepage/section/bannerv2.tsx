@@ -9,25 +9,25 @@ import { useEffect, useState } from "react";
 
 const banner_list = [
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776627/Banner_1_BG_r2wdfc.png",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1905/v1765776627/Banner_1_BG_r2wdfc.png",
   },
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776615/Banner_2_BG_smi7au.png",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1905/v1765776615/Banner_2_BG_smi7au.png",
   },
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776622/Banner_3_BG_fuuacw.jpg",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1905/v1765776622/Banner_3_BG_fuuacw.jpg",
   },
 ];
 
 const banner_list_mobile = [
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776611/Banner_1_BG_mobile_s7yach.png",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1080/v1765776611/Banner_1_BG_mobile_s7yach.png",
   },
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776610/Banner_2_BG_mobile_dlvhyl.png",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1080/v1765776610/Banner_2_BG_mobile_dlvhyl.png",
   },
   {
-    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/v1765776614/Banner_3_BG_mobile_ekmqm9.png",
+    path: "https://res.cloudinary.com/dmz19yaoz/image/upload/f_auto,q_auto,w_1080/v1765776614/Banner_3_BG_mobile_ekmqm9.png",
   },
 ];
 
@@ -59,9 +59,7 @@ export default function BannerV2() {
               src={r.path}
               alt={`banner-${i}`}
               fill
-              priority
-              quality={100}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1905px"
               className="object-cover object-center opacity-90"
               loading="lazy"
             />

@@ -58,19 +58,17 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex justify-center mb-8 lg:justify-start">
               <Link
-                id="glamori_app"
-                aria-label="glamori_logo"
                 href="/"
                 className="flex items-center gap-2 whitespace-nowrap focus:outline-none"
+                aria-label="Glamori Home"
               >
                 <Image
                   src={glamori_logo_navbar}
                   width={110}
                   height={55}
-                  alt="glamori_logo"
-                  quality={100}
-                  className="w-auto h-auto"
-                  loading="lazy"
+                  alt="Glamori Logo"
+                  priority
+                  sizes="110px"
                 />
               </Link>
             </div>

@@ -77,13 +77,17 @@ export default function ReadBlog({ articleDetails }: ReadBlogProps) {
             {/* Featured Image */}
             <div className="relative w-full overflow-hidden rounded-lg aspect-video">
               <Image
-                src={articleDetails.data.image}
+                src={articleDetails.data.image.replace(
+                  "/upload/",
+                  "/upload/f_auto,q_auto,w_1152,dpr_auto/"
+                )}
                 alt={articleDetails.data.title}
                 fill
                 className="object-cover"
-                priority
-                quality={100}
                 loading="lazy"
+                sizes="(max-width: 768px) 100vw,
+           (max-width: 1200px) 768px,
+           1152px"
               />
             </div>
           </header>

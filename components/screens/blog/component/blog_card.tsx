@@ -77,6 +77,8 @@ function Card({
             src={props.image}
             alt={props.title}
             fill
+            quality={80}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
             loading="lazy"
           />

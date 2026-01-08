@@ -1,5 +1,5 @@
 import Faq from "@/components/global/faq";
-import Banner from "./section/banner";
+// import Banner from "./section/banner";
 import FollowInstagram from "./section/followinstagram";
 import LatestBlog from "./section/latestblog";
 import Subscribe from "./section/subscribe";
