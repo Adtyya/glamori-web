@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     },
   },
 
-  // verification: {
-  //   google: "YOUR_GOOGLE_VERIFICATION_CODE",
-  // },
+  verification: {
+    google: "gLn6wSLhM7Ub7nrhtbUEnfoW37mENXPG4JtHDMl5Xx8",
+  },
 
   generator: "Next.js",
   referrer: "origin",
