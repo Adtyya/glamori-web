@@ -5,6 +5,7 @@ import "swiper/css/effect-fade";
 import { Footer, NavigationBar } from "@/components/layout";
 import NextTopLoader from "nextjs-toploader";
 import { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   icons: {
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <NavigationBar />
+        <GoogleTagManager gtmId="G-0FZ5KS0T60" />
         <NextTopLoader color="#E3AC14" />
         {children}
         <Footer />
