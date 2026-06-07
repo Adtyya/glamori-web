@@ -1,23 +1,17 @@
-import Faq from "@/components/global/faq";
-// import Banner from "./section/banner";
-import FollowInstagram from "./section/followinstagram";
-import LatestBlog from "./section/latestblog";
-import Subscribe from "./section/subscribe";
-import Testimonial from "./section/testimonial";
-import Treatment from "./section/treatment";
-import BannerV2 from "./section/bannerv2";
+"use client";
+
+import React from "react";
+import HomeSection from "./section/HomeSection";
+import WhatsAppFloat from "./component/WhatsAppFloat";
 
 export default function HomePageScreen() {
   return (
     <>
-      {/* <Banner /> */}
-      <BannerV2 />
-      <Treatment />
-      <FollowInstagram />
-      <Testimonial />
-      <LatestBlog />
-      <Faq />
-      <Subscribe />
+      {/* Landing Page Content */}
+      <HomeSection />
+
+      {/* Floating WhatsApp Action */}
+      <WhatsAppFloat />
     </>
   );
 }
