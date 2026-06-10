@@ -73,6 +73,7 @@ function Card({ image, name, branch, cta, numberPosition }: CardProps) {
           alt="sample"
           fill
           className={`object-cover ${scaling}`}
+          loading="lazy"
         />
       </div>
 

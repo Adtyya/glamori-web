@@ -103,9 +103,9 @@ Beberapa klinik menghadirkan variasi signature facial dengan teknologi atau baha
       {
         image: "/assets/images/beforeafter/skin_q_1.jpg",
       },
-      {
-        image: "/assets/images/beforeafter/skin_q_2.jpeg",
-      },
+      // {
+      //   image: "/assets/images/beforeafter/skin_q_2.jpeg",
+      // },
     ],
     slug: "skin-quality",
     spoiler:
@@ -378,9 +378,9 @@ Perawatan khusus untuk menangani masalah pembuluh darah seperti spider veins, te
       {
         image: "/assets/images/beforeafter/face_c_5.jpeg",
       },
-      {
-        image: "/assets/images/beforeafter/bust_1.jpg",
-      },
+      // {
+      //   image: "/assets/images/beforeafter/bust_1.jpg",
+      // },
     ],
     slug: "face-contouring",
     spoiler: `Serangkaian treatment face contouring untuk membentuk dan menyeimbangkan fitur wajah—mulai dari mengencangkan kulit, merampingkan pipi, memperbaiki struktur hidung dan dagu, hingga meremajakan area mata. Pilihannya mencakup ThreadLift, Botox, Filler, Buccal Fat Removal, Eyebag Fat Removal, Korean Double Eyelid, Ultralift (HIFU), dan Lippo Modeling.
@@ -738,9 +738,9 @@ Perawatan rejuvenasi dengan penyuntikan ke area otot dada untuk merangsang penge
       {
         image: "/assets/images/beforeafter/eye_treatment_1.jpg",
       },
-      {
-        image: "/assets/images/beforeafter/eye_treatment_2.jpg",
-      },
+      // {
+      //   image: "/assets/images/beforeafter/eye_treatment_2.jpg",
+      // },
     ],
     slug: "eyes-treatment",
     spoiler:

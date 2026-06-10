@@ -32,6 +32,7 @@ export default function Hero({ productDetails }: DetailProductProps) {
                           alt={productDetails.title}
                           fill
                           className="object-contain"
+                          loading="lazy"
                         />
                       </div>
                     </SwiperSlide>

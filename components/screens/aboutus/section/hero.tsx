@@ -15,6 +15,7 @@ export default function Hero() {
                 alt="glamori_logo"
                 fill
                 className="object-cover"
+                loading="lazy"
               />
             </div>
           </div>
