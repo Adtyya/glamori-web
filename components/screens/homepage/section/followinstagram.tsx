@@ -12,7 +12,7 @@ import {
 
 export default function FollowInstagram() {
   return (
-    <Container>
+    <div className="wrap">
       <div className="py-12">
         <div className="flex items-center justify-center">
           <div className="text-center">
@@ -56,7 +56,7 @@ export default function FollowInstagram() {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
 

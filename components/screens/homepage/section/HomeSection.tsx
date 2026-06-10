@@ -11,6 +11,8 @@ import WhyUsSection from "./home/WhyUsSection";
 import LocationsSection from "./home/LocationsSection";
 import TestimonialsSection from "./home/TestimonialsSection";
 import FaqSection from "./home/FaqSection";
+import InstagramEmbed from "../component/instagram";
+import FollowInstagram from "./followinstagram";
 
 export default function HomeSection() {
   return (
@@ -29,6 +31,8 @@ export default function HomeSection() {
 
       {/* Why Us Section */}
       <WhyUsSection />
+
+      <FollowInstagram />
 
       {/* Locations Section */}
       <LocationsSection />
