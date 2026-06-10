@@ -44,13 +44,31 @@ export default function Footer() {
             <Link href="/#locations">Jakarta — Pluit</Link>
             <Link href="/#locations">Bandar Lampung</Link>
             <h5 style={{ marginTop: "18px" }}>Ikuti</h5>
-            <a
-              href="https://www.instagram.com/glamoriaesthetic/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp · Instagram · TikTok
-            </a>
+            <div className="flex space-x-1">
+              <a
+                href="https://api.whatsapp.com/send/?phone=6285270010701"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+              <div>·</div>
+              <a
+                href="https://www.instagram.com/glamoriaesthetic/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+              <div>·</div>
+              <a
+                href="https://www.tiktok.com/@glamoriaesthetic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TikTok
+              </a>
+            </div>
           </div>
         </div>
         <div className="f-bottom">
