@@ -12,7 +12,7 @@ export default function Navbar() {
   const handleReservasi = () => {
     window.open(
       "https://wa.me/6285270010701?text=Halo%20Glamori%2C%20saya%20ingin%20melakukan%20reservasi%20treatment.",
-      "_blank"
+      "_blank",
     );
     setIsOpen(false);
   };
@@ -48,22 +48,30 @@ export default function Navbar() {
         <Link href="/" className="logo cursor-pointer" onClick={closeMenu}>
           Glamorí<small>by Sully &amp; Co.</small>
         </Link>
-        
+
         {/* Desktop Navigation */}
         <nav className="nav-links">
           <Link href="/">Beranda</Link>
           <Link href="/#treatments">Treatment</Link>
           <Link
             href="/product/miss-v-series"
-            className={pathname === "/product/miss-v-series" ? "text-gold-deep" : ""}
+            className={
+              pathname === "/product/miss-v-series" ? "text-gold-deep" : ""
+            }
           >
             Miss V Series
           </Link>
-          <Link href="/#why-us">Tentang</Link>
+          <Link href="/tentang-glamori">Tentang</Link>
           <Link href="/#locations">Lokasi</Link>
-          <a onClick={handleReservasi} className="btn btn-gold nav-cta">
+          <Link href="/blog">Blog</Link>
+          <Link href="/hubungi-kami">
+            <div className="btn btn-gold nav-cta">
+              <p>Reservasi</p>
+            </div>
+          </Link>
+          {/* <a onClick={handleReservasi} className="btn btn-gold nav-cta">
             Reservasi
-          </a>
+          </a> */}
         </nav>
 
         {/* Mobile Toggle Button */}
