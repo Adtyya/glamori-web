@@ -7,6 +7,7 @@ interface LocationCardProps {
   hoursOpen: string;
   reservasiUrl: string;
   reservasiText: string;
+  image?: string;
 }
 
 export default function LocationCard({
@@ -16,6 +17,7 @@ export default function LocationCard({
   hoursOpen,
   reservasiUrl,
   reservasiText,
+  image,
 }: LocationCardProps) {
   const handleReservasi = () => {
     window.open(reservasiUrl, "_blank");
@@ -23,7 +25,9 @@ export default function LocationCard({
 
   return (
     <div className="loc-card">
-      <div className="ph"></div>
+      <div className="ph">
+        {image && <img src={image} alt={title} loading="lazy" />}
+      </div>
       <div className="body">
         <h4>{title}</h4>
         <p className="addr">{address}</p>
@@ -35,7 +39,11 @@ export default function LocationCard({
             <b>Jam</b> {hoursOpen}
           </span>
         </div>
-        <a onClick={handleReservasi} className="btn btn-gold" style={{ fontSize: ".85rem" }}>
+        <a
+          onClick={handleReservasi}
+          className="btn btn-gold"
+          style={{ fontSize: ".85rem" }}
+        >
           {reservasiText}
         </a>
       </div>

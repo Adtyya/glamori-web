@@ -30,6 +30,27 @@ export default function Navbar() {
     setIsOpen(false);
   }, [pathname]);
 
+  // Handle smooth scrolling to hash anchors when navigating from other pages
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Fallback delay for hydration / rendering
+        const timer = setTimeout(() => {
+          const delayedElement = document.getElementById(id);
+          if (delayedElement) {
+            delayedElement.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 150);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [pathname]);
+
   // Lock scroll when menu is open
   useEffect(() => {
     if (isOpen) {
@@ -62,16 +83,11 @@ export default function Navbar() {
             Miss V Series
           </Link>
           <Link href="/tentang-glamori">Tentang</Link>
-          <Link href="/#locations">Lokasi</Link>
+          <Link href="/hubungi-kami">Lokasi</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/hubungi-kami">
-            <div className="btn btn-gold nav-cta">
-              <p>Reservasi</p>
-            </div>
-          </Link>
-          {/* <a onClick={handleReservasi} className="btn btn-gold nav-cta">
+          <a onClick={handleReservasi} className="btn btn-gold nav-cta">
             Reservasi
-          </a> */}
+          </a>
         </nav>
 
         {/* Mobile Toggle Button */}

@@ -2,6 +2,10 @@
 
 import React from "react";
 import LocationCard from "../../component/LocationCard";
+import {
+  glamori_jakarta_branch,
+  glamori_lampung_branch,
+} from "@/constant/image";
 
 const locations = [
   {
@@ -9,16 +13,20 @@ const locations = [
     address: "Jl. Muara Karang Bar., Pluit, Penjaringan, Jakarta Utara 14450",
     daysOpen: "Tiap hari",
     hoursOpen: "09.30–18.00",
-    reservasiUrl: "https://wa.me/6285270010701?text=Halo%20Glamori%20Pluit%2C%20saya%20ingin%20reservasi%20treatment.",
+    reservasiUrl:
+      "https://wa.me/6285270010701?text=Halo%20Glamori%20Pluit%2C%20saya%20ingin%20reservasi%20treatment.",
     reservasiText: "Reservasi Pluit",
+    image: glamori_jakarta_branch,
   },
   {
     title: "Glamori Bandar Lampung",
     address: "Jl. Diponegoro No.156, Enggal, Bandar Lampung 35118",
     daysOpen: "Tiap hari",
     hoursOpen: "09.30–18.00",
-    reservasiUrl: "https://wa.me/6289606000101?text=Halo%20Glamori%20Lampung%2C%20saya%20ingin%20reservasi%20treatment.",
+    reservasiUrl:
+      "https://wa.me/6289606000101?text=Halo%20Glamori%20Lampung%2C%20saya%20ingin%20reservasi%20treatment.",
     reservasiText: "Reservasi Lampung",
+    image: glamori_lampung_branch,
   },
 ];
 
@@ -40,6 +48,7 @@ export default function LocationsSection() {
               hoursOpen={loc.hoursOpen}
               reservasiUrl={loc.reservasiUrl}
               reservasiText={loc.reservasiText}
+              image={loc.image}
             />
           ))}
         </div>
