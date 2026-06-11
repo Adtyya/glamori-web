@@ -66,7 +66,7 @@ export default function Navbar() {
   return (
     <header className="nav">
       <div className="wrap nav-in">
-        <Link href="/" className="logo cursor-pointer" onClick={closeMenu}>
+        <Link href="/" className="cursor-pointer logo" onClick={closeMenu}>
           Glamorí<small>by Sully &amp; Co.</small>
         </Link>
 
@@ -116,13 +116,10 @@ export default function Navbar() {
           >
             Miss V Series
           </Link>
-          <Link href="/#why-us" onClick={closeMenu}>
-            Tentang
-          </Link>
-          <Link href="/#locations" onClick={closeMenu}>
-            Lokasi
-          </Link>
-          <a onClick={handleReservasi} className="btn btn-gold nav-mobile-cta">
+          <Link href="/tentang-glamori">Tentang</Link>
+          <Link href="/hubungi-kami">Lokasi</Link>
+          <Link href="/blog">Blog</Link>
+          <a onClick={handleReservasi} className="btn btn-gold nav-cta">
             Reservasi
           </a>
         </nav>
